@@ -1,4 +1,5 @@
 include_HEADERS = \
+  inttypes.h      \
   stdalign.h      \
   stdarg.h        \
   stdatomic.h     \
