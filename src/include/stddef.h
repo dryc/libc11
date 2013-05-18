@@ -7,6 +7,8 @@
  * @file
  *
  * <stddef.h> - Common definitions.
+ *
+ * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stddef.h.html
  */
 
 #endif /* _STDDEF_H */

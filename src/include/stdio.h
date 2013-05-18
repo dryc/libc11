@@ -7,6 +7,8 @@
  * @file
  *
  * <stdio.h> - Input/output.
+ *
+ * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdio.h.html
  */
 
 #ifdef __cplusplus

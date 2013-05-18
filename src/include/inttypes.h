@@ -7,6 +7,8 @@
  * @file
  *
  * <inttypes.h> - Format conversion of integer types.
+ *
+ * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/inttypes.h.html
  */
 
 #include <stdint.h>

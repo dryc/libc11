@@ -7,6 +7,8 @@
  * @file
  *
  * <stdlib.h> - General utilities.
+ *
+ * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdlib.h.html
  */
 
 #ifdef __cplusplus
