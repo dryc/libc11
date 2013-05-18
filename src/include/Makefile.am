@@ -1,5 +1,7 @@
 include_HEADERS = \
+  assert.h        \
   inttypes.h      \
+  limits.h        \
   stdalign.h      \
   stdarg.h        \
   stdatomic.h     \
@@ -8,4 +10,5 @@ include_HEADERS = \
   stdint.h        \
   stdio.h         \
   stdlib.h        \
-  stdnoreturn.h
+  stdnoreturn.h   \
+  string.h
