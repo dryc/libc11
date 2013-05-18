@@ -1,0 +1,10 @@
+.deps/
+.libs/
+.dirstamp
+*.a
+*.o
+*.la
+*.lo
+config.h
+config.h.in
+config.h.in~
