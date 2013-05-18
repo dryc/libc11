@@ -70,8 +70,15 @@ dnl Check for library functions:
 dnl Check for system services:
 
 dnl Generate output:
-AC_CONFIG_FILES([Makefile lib/Makefile man/Makefile src/Makefile
-                 src/include/Makefile test/Makefile])
+AC_CONFIG_FILES([Makefile lib/Makefile man/Makefile
+                 src/Makefile
+                 src/include/Makefile src/assert/Makefile src/ctype/Makefile
+                 src/errno/Makefile src/inttypes/Makefile src/stdio/Makefile
+                 src/stdlib/Makefile src/string/Makefile
+                 test/Makefile
+                 test/include/Makefile test/assert/Makefile test/ctype/Makefile
+                 test/errno/Makefile test/inttypes/Makefile test/stdio/Makefile
+                 test/stdlib/Makefile test/string/Makefile])
 AC_SUBST([PACKAGE_VERSION_MAJOR], ["VERSION_MAJOR"])
 AC_SUBST([PACKAGE_VERSION_MINOR], ["VERSION_MINOR"])
 AC_SUBST([PACKAGE_VERSION_PATCH], ["VERSION_PATCH"])
