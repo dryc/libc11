@@ -1,6 +1,9 @@
 include_HEADERS = \
   assert.h        \
+  ctype.h         \
+  errno.h         \
   inttypes.h      \
+  iso646.h        \
   limits.h        \
   stdalign.h      \
   stdarg.h        \
