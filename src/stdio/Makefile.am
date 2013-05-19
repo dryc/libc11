@@ -4,4 +4,6 @@ noinst_LIBRARIES = libcstdio.a
 
 libcstdio_a_SOURCES = \
   snprintf.c          \
-  sprintf.c
+  sprintf.c           \
+  vsnprintf.c         \
+  vsprintf.c
