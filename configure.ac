@@ -71,6 +71,11 @@ AS_CASE([$ax_cv_c_compiler_vendor],
   [AC_MSG_WARN([unsupported compiler: specify preprocessor/linker flags manually])])
 
 dnl Check for library functions:
+AB_CHECK_BUILTIN([__builtin_memchr])
+AB_CHECK_BUILTIN([__builtin_memcmp])
+AB_CHECK_BUILTIN([__builtin_memcpy])
+AB_CHECK_BUILTIN([__builtin_memmove])
+AB_CHECK_BUILTIN([__builtin_memset])
 
 dnl Check for system services:
 
