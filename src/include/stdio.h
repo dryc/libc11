@@ -11,9 +11,15 @@
  * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdio.h.html
  */
 
+#include <stddef.h> /* for size_t */
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+int snprintf(char* restrict str, size_t size, const char* restrict format, ...);
+
+int sprintf(char* restrict str, const char* restrict format, ...);
 
 #ifdef __cplusplus
 } /* extern "C" */
