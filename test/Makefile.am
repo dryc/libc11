@@ -1,1 +1,1 @@
-SUBDIRS = include assert ctype errno inttypes stdio stdlib string
+SUBDIRS = include assert ctype errno inttypes stdarg stdio stdlib string
