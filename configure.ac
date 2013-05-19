@@ -64,6 +64,11 @@ dnl Check for structures:
 
 dnl Check for compiler characteristics:
 AC_CANONICAL_HOST
+AX_COMPILER_VENDOR
+AS_CASE([$ax_cv_c_compiler_vendor],
+  [clang], [AM_CPPFLAGS="$AM_CPPFLAGS -nostdinc" AM_LDFLAGS="$AM_LDFLAGS -nostdlib"],
+  [gnu], [AM_CPPFLAGS="$AM_CPPFLAGS -nostdinc" AM_LDFLAGS="$AM_LDFLAGS -nostdlib"],
+  [AC_MSG_WARN([unsupported compiler: specify preprocessor/linker flags manually])])
 
 dnl Check for library functions:
 
@@ -79,6 +84,9 @@ AC_CONFIG_FILES([Makefile lib/Makefile man/Makefile
                  test/include/Makefile test/assert/Makefile test/ctype/Makefile
                  test/errno/Makefile test/inttypes/Makefile test/stdarg/Makefile
                  test/stdio/Makefile test/stdlib/Makefile test/string/Makefile])
+AC_SUBST([AM_CPPFLAGS])
+AC_SUBST([AM_CFLAGS])
+AC_SUBST([AM_LDFLAGS])
 AC_SUBST([PACKAGE_VERSION_MAJOR], ["VERSION_MAJOR"])
 AC_SUBST([PACKAGE_VERSION_MINOR], ["VERSION_MINOR"])
 AC_SUBST([PACKAGE_VERSION_PATCH], ["VERSION_PATCH"])
