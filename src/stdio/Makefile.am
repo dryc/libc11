@@ -1,9 +1,9 @@
 AM_CPPFLAGS += -I$(top_srcdir)/src -I$(top_srcdir)/src/include -iquote $(srcdir)
 
-noinst_LIBRARIES = libcstdio.a
+noinst_LTLIBRARIES = libcstdio.la
 
-libcstdio_a_SOURCES = \
-  snprintf.c          \
-  sprintf.c           \
-  vsnprintf.c         \
+libcstdio_la_SOURCES = \
+  snprintf.c           \
+  sprintf.c            \
+  vsnprintf.c          \
   vsprintf.c
