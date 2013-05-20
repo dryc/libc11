@@ -8,5 +8,5 @@
 
 int
 isalpha(const int c) {
-  return (void)c, 0; // TODO
+  return isupper(c) || islower(c); /* in the "C" locale */
 }

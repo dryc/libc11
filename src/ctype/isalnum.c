@@ -8,5 +8,5 @@
 
 int
 isalnum(const int c) {
-  return (void)c, 0; // TODO
+  return isalpha(c) || isdigit(c);
 }
