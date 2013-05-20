@@ -1,0 +1,7 @@
+*.html
+*.json
+*.jsonld
+*.nq
+*.nt
+*.rdf
+*.xml
