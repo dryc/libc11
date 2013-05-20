@@ -8,5 +8,5 @@
 
 int
 islower(const int c) {
-  return (void)c, 0; // TODO
+  return c >= 'a' && c <= 'z'; /* in the "C" locale */
 }

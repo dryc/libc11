@@ -8,5 +8,5 @@
 
 int
 isupper(const int c) {
-  return (void)c, 0; // TODO
+  return c >= 'A' && c <= 'Z'; /* in the "C" locale */
 }
