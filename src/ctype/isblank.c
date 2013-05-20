@@ -8,5 +8,5 @@
 
 int
 isblank(const int c) {
-  return (void)c, 0; // TODO
+  return c == ' ' || c == '\t'; /* in the "C" locale */
 }

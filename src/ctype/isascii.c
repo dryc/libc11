@@ -8,5 +8,5 @@
 
 int
 isascii(const int c) {
-  return (void)c, 0; // TODO
+  return c >= 0 && c <= 0x7F; /* 7-bit ASCII */
 }
