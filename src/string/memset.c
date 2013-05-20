@@ -7,8 +7,15 @@
 #include <string.h>
 
 void*
-memset(void* s,
-       int c,
+memset(void* const s,
+       const int c,
        size_t n) {
-  return (void)s, (void)c, (void)n, (void*)0; // TODO
+  const unsigned char b = (unsigned char)c;
+
+  unsigned char* p = (unsigned char*)s;
+  while (n--) {
+    *p++ = b;
+  }
+
+  return s;
 }
