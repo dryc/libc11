@@ -1,0 +1,16 @@
+@base         <http://ablibc.org/stdio/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<snprintf> a c:Function ;
+  rdfs:label "snprintf" .
+
+<sprintf> a c:Function ;
+  rdfs:label "sprintf" .
+
+<vsnprintf> a c:Function ;
+  rdfs:label "vsnprintf" .
+
+<vsprintf> a c:Function ;
+  rdfs:label "vsprintf" .

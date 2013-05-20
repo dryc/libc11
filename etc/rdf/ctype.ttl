@@ -1,0 +1,43 @@
+@base         <http://ablibc.org/ctype/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<isalnum> a c:Function ;
+  rdfs:label "isalnum" .
+
+<isalpha> a c:Function ;
+  rdfs:label "isalpha" .
+
+<isascii> a c:Function ;
+  rdfs:label "isascii" .
+
+<isblank> a c:Function ;
+  rdfs:label "isblank" .
+
+<iscntrl> a c:Function ;
+  rdfs:label "iscntrl" .
+
+<isdigit> a c:Function ;
+  rdfs:label "isdigit" .
+
+<isgraph> a c:Function ;
+  rdfs:label "isgraph" .
+
+<islower> a c:Function ;
+  rdfs:label "islower" .
+
+<isprint> a c:Function ;
+  rdfs:label "isprint" .
+
+<ispunct> a c:Function ;
+  rdfs:label "ispunct" .
+
+<isspace> a c:Function ;
+  rdfs:label "isspace" .
+
+<isupper> a c:Function ;
+  rdfs:label "isupper" .
+
+<isxdigit> a c:Function ;
+  rdfs:label "isxdigit" .

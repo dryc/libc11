@@ -1,0 +1,19 @@
+@base         <http://ablibc.org/string/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<memchr> a c:Function ;
+  rdfs:label "memchr" .
+
+<memcmp> a c:Function ;
+  rdfs:label "memcmp" .
+
+<memcpy> a c:Function ;
+  rdfs:label "memcpy" .
+
+<memmove> a c:Function ;
+  rdfs:label "memmove" .
+
+<memset> a c:Function ;
+  rdfs:label "memset" .
