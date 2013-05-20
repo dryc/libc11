@@ -10,5 +10,5 @@ void*
 memchr(const void* s,
        int c,
        size_t n) {
-  return (void)s, (void)c, (void)n, (void*)0; // TODO
+  return (void)s, (void)c, (void)n, NULL; // TODO
 }
