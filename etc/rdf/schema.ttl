@@ -1,0 +1,35 @@
+# The RDFS/OWL vocabulary for <http://ablibc.org/>.
+
+@base         <http://ablibc.org/rdf/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix dc:   <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+c:Library a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:label "Library"@en ;
+  rdfs:comment "A C11 library."@en .
+
+c:Header a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:label "Header"@en ;
+  rdfs:comment "A C11 header file."@en .
+
+c:Function a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:label "Function"@en ;
+  rdfs:comment "A C11 function."@en .
+
+c:Macro a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:label "Macro"@en ;
+  rdfs:comment "A C11 macro."@en .
+
+c:Variable a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:label "Variable"@en ;
+  rdfs:comment "A C11 variable."@en .
