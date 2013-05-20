@@ -3,6 +3,7 @@
 pkg/
 tmp/
 *~
+README.html
 
 # GNU Autotools
 etc/aclocal/
