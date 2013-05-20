@@ -8,5 +8,5 @@
 
 int
 isdigit(const int c) {
-  return (void)c, 0; // TODO
+  return c >= '0' && c <= '9';
 }
