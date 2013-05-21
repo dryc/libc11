@@ -1,5 +1,5 @@
-libc11
-======
+libc11: C11 standard library
+============================
 
 .. image:: https://travis-ci.org/unlicensed/libc11.png?branch=master
    :target: https://travis-ci.org/unlicensed/libc11
@@ -10,6 +10,13 @@ libc11
 standard library.
 
 .. _C11: http://en.wikipedia.org/wiki/C11_%28C_standard_revision%29
+
+Features
+--------
+
+* No build prerequisites beyond the Autotools toolchain and a C99 compiler.
+* 100% free and unencumbered `public domain <http://unlicense.org/>`_ software,
+  usable in any context and for any purpose.
 
 Current Status
 --------------

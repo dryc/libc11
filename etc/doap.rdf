@@ -10,7 +10,7 @@
     <doap:bug-database rdf:resource="https://github.com/unlicensed/libc11/issues"/>
     <doap:created>2013-05-18</doap:created>
     <doap:description xml:lang="en">
-      ...
+      A public domain implementation of the C11 standard library.
     </doap:description>
     <doap:developer rdf:resource="http://ar.to/#self"/>
     <doap:documenter rdf:resource="http://ar.to/#self"/>
@@ -20,7 +20,7 @@
     <doap:maintainer rdf:resource="http://ar.to/#self"/>
     <doap:name>libc11</doap:name>
     <doap:platform>C</doap:platform>
-    <doap:shortdesc xml:lang="en">...</doap:shortdesc>
+    <doap:shortdesc xml:lang="en">C11 standard library</doap:shortdesc>
     <foaf:maker rdf:resource="http://ar.to/#self"/>
   </doap:Project>
   <foaf:Person rdf:about="http://ar.to/#self">
