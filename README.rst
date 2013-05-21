@@ -74,6 +74,19 @@ Other Implementations
 .. _Newlib:   http://en.wikipedia.org/wiki/Newlib
 .. _uClibc:   http://en.wikipedia.org/wiki/UClibc
 
+Elsewhere
+---------
+
+Find the project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
+and `Travis CI`_.
+
+.. _GitHub:      http://github.com/unlicensed/libc11
+.. _Bitbucket:   http://bitbucket.org/unlicensed/libc11
+.. _Ohloh:       http://www.ohloh.net/p/libc11
+.. _Freecode:    http://freecode.com/projects/libc11
+.. _SourceForge: http://sourceforge.net/projects/libc11/
+.. _Travis CI:   http://travis-ci.org/unlicensed/libc11
+
 License
 -------
 
