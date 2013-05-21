@@ -80,15 +80,48 @@ AB_CHECK_BUILTIN([__builtin_memset])
 dnl Check for system services:
 
 dnl Generate output:
-AC_CONFIG_FILES([Makefile lib/Makefile man/Makefile
-                 src/Makefile
-                 src/include/Makefile src/assert/Makefile src/ctype/Makefile
-                 src/errno/Makefile src/inttypes/Makefile src/stdarg/Makefile
-                 src/stdio/Makefile src/stdlib/Makefile src/string/Makefile
-                 test/Makefile
-                 test/include/Makefile test/assert/Makefile test/ctype/Makefile
-                 test/errno/Makefile test/inttypes/Makefile test/stdarg/Makefile
-                 test/stdio/Makefile test/stdlib/Makefile test/string/Makefile])
+AC_CONFIG_FILES([
+  Makefile
+  lib/Makefile
+  man/Makefile
+  src/Makefile
+  src/include/Makefile
+  src/assert/Makefile
+  src/complex/Makefile
+  src/ctype/Makefile
+  src/errno/Makefile
+  src/fenv/Makefile
+  src/inttypes/Makefile
+  src/locale/Makefile
+  src/math/Makefile
+  src/setjmp/Makefile
+  src/signal/Makefile
+  src/stdarg/Makefile
+  src/stdio/Makefile
+  src/stdlib/Makefile
+  src/string/Makefile
+  src/threads/Makefile
+  src/time/Makefile
+  src/uchar/Makefile
+  test/Makefile
+  test/include/Makefile
+  test/assert/Makefile
+  test/complex/Makefile
+  test/ctype/Makefile
+  test/errno/Makefile
+  test/fenv/Makefile
+  test/inttypes/Makefile
+  test/locale/Makefile
+  test/math/Makefile
+  test/setjmp/Makefile
+  test/signal/Makefile
+  test/stdarg/Makefile
+  test/stdio/Makefile
+  test/stdlib/Makefile
+  test/string/Makefile
+  test/threads/Makefile
+  test/time/Makefile
+  test/uchar/Makefile])
 AC_SUBST([AM_CPPFLAGS])
 AC_SUBST([AM_CFLAGS])
 AC_SUBST([AM_LDFLAGS])
