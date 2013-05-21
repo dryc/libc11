@@ -4,27 +4,27 @@
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-  <doap:Project rdf:about="http://ablibc.org/">
+  <doap:Project rdf:about="http://libc11.org/">
     <dc:creator rdf:resource="http://ar.to/#self"/>
     <doap:blog rdf:resource="http://ar.to/"/>
-    <doap:bug-database rdf:resource="https://github.com/abunix/ablibc/issues"/>
+    <doap:bug-database rdf:resource="https://github.com/unlicensed/libc11/issues"/>
     <doap:created>2013-05-18</doap:created>
     <doap:description xml:lang="en">
       ...
     </doap:description>
     <doap:developer rdf:resource="http://ar.to/#self"/>
     <doap:documenter rdf:resource="http://ar.to/#self"/>
-    <doap:download-page rdf:resource="http://sourceforge.net/projects/ablibc/files/"/>
-    <doap:homepage rdf:resource="http://ablibc.org/"/>
+    <doap:download-page rdf:resource="http://sourceforge.net/projects/libc11/files/"/>
+    <doap:homepage rdf:resource="http://libc11.org/"/>
     <doap:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
     <doap:maintainer rdf:resource="http://ar.to/#self"/>
-    <doap:name>ablibc</doap:name>
+    <doap:name>libc11</doap:name>
     <doap:platform>C</doap:platform>
     <doap:shortdesc xml:lang="en">...</doap:shortdesc>
     <foaf:maker rdf:resource="http://ar.to/#self"/>
   </doap:Project>
   <foaf:Person rdf:about="http://ar.to/#self">
-    <foaf:made rdf:resource="http://ablibc.org/"/>
+    <foaf:made rdf:resource="http://libc11.org/"/>
     <foaf:mbox rdf:resource="mailto:arto@bendiken.net"/>
     <foaf:mbox_sha1sum>a033f652c84a4d73b8c26d318c2395699dd2bdfb</foaf:mbox_sha1sum>
     <foaf:name>Arto Bendiken</foaf:name>

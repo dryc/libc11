@@ -1,5 +1,5 @@
-@base         <http://ablibc.org/stdalign/> .
-@prefix c:    <http://ablibc.org/schema/> .
+@base         <http://libc11.org/stdalign/> .
+@prefix c:    <http://libc11.org/schema/> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 

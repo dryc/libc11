@@ -16,9 +16,9 @@ m4_define([VERSION_STRING],
   m4_esyscmd([git describe --dirty --always | tr -d '\n']))
 
 dnl Define package information:
-AC_INIT([ablibc], [VERSION_STRING],
-  [arto@bendiken.net], [ablibc],
-  [http://ablibc.org/])
+AC_INIT([libc11], [VERSION_STRING],
+  [arto@bendiken.net], [libc11],
+  [http://libc11.org/])
 
 dnl Configure Autoconf:
 AC_CONFIG_HEADERS([src/config.h])
