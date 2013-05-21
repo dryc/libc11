@@ -9,6 +9,13 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+# Classes
+
+c:Standard a rdfs:Class ;
+  rdfs:subClassOf dc:Standard ;
+  rdfs:label "Standard"@en ;
+  rdfs:comment "A C language standard."@en .
+
 c:Library a rdfs:Class ;
   rdfs:subClassOf rdfs:Resource ;
   rdfs:label "Library"@en ;
@@ -18,6 +25,11 @@ c:Header a rdfs:Class ;
   rdfs:subClassOf rdfs:Resource ;
   rdfs:label "Header"@en ;
   rdfs:comment "A C11 header file."@en .
+
+c:Type a rdfs:Class ;
+  rdfs:subClassOf rdfs:Resource ;
+  rdfs:label "Type"@en ;
+  rdfs:comment "A C11 type definition."@en .
 
 c:Function a rdfs:Class ;
   rdfs:subClassOf rdfs:Resource ;
@@ -33,3 +45,5 @@ c:Variable a rdfs:Class ;
   rdfs:subClassOf rdfs:Resource ;
   rdfs:label "Variable"@en ;
   rdfs:comment "A C11 variable."@en .
+
+# Properties

@@ -3,14 +3,20 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+# Functions
+
 <snprintf> a c:Function ;
-  rdfs:label "snprintf" .
+  rdfs:label "snprintf" ;
+  rdfs:comment ""@en .
 
 <sprintf> a c:Function ;
-  rdfs:label "sprintf" .
+  rdfs:label "sprintf" ;
+  rdfs:comment ""@en .
 
 <vsnprintf> a c:Function ;
-  rdfs:label "vsnprintf" .
+  rdfs:label "vsnprintf" ;
+  rdfs:comment ""@en .
 
 <vsprintf> a c:Function ;
-  rdfs:label "vsprintf" .
+  rdfs:label "vsprintf" ;
+  rdfs:comment ""@en .

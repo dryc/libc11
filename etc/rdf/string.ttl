@@ -3,17 +3,24 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+# Functions
+
 <memchr> a c:Function ;
-  rdfs:label "memchr" .
+  rdfs:label "memchr" ;
+  rdfs:comment ""@en .
 
 <memcmp> a c:Function ;
-  rdfs:label "memcmp" .
+  rdfs:label "memcmp" ;
+  rdfs:comment ""@en .
 
 <memcpy> a c:Function ;
-  rdfs:label "memcpy" .
+  rdfs:label "memcpy" ;
+  rdfs:comment ""@en .
 
 <memmove> a c:Function ;
-  rdfs:label "memmove" .
+  rdfs:label "memmove" ;
+  rdfs:comment ""@en .
 
 <memset> a c:Function ;
-  rdfs:label "memset" .
+  rdfs:label "memset" ;
+  rdfs:comment ""@en .

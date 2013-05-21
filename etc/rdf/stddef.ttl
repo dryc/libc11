@@ -1,0 +1,20 @@
+@base         <http://ablibc.org/stddef/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Macros
+
+<NULL> a c:Macro ;
+  rdfs:label "NULL" ;
+  rdfs:comment ""@en .
+
+# Types
+
+<ptrdiff_t> a c:Type ;
+  rdfs:label "ptrdiff_t" ;
+  rdfs:comment ""@en .
+
+<size_t> a c:Type ;
+  rdfs:label "size_t" ;
+  rdfs:comment ""@en .

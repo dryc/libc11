@@ -1,0 +1,22 @@
+@base         <http://ablibc.org/stdalign/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Macros
+
+<__alignas_is_defined> a c:Macro ;
+  rdfs:label "__alignas_is_defined" ;
+  rdfs:comment ""@en .
+
+<__alignof_is_defined> a c:Macro ;
+  rdfs:label "__alignof_is_defined" ;
+  rdfs:comment ""@en .
+
+<alignas> a c:Macro ;
+  rdfs:label "alignas" ;
+  rdfs:comment ""@en .
+
+<alignof> a c:Macro ;
+  rdfs:label "alignof" ;
+  rdfs:comment ""@en .

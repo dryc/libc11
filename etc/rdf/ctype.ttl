@@ -3,41 +3,56 @@
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+# Functions
+
 <isalnum> a c:Function ;
-  rdfs:label "isalnum" .
+  rdfs:label "isalnum" ;
+  rdfs:comment ""@en .
 
 <isalpha> a c:Function ;
-  rdfs:label "isalpha" .
+  rdfs:label "isalpha" ;
+  rdfs:comment ""@en .
 
 <isascii> a c:Function ;
-  rdfs:label "isascii" .
+  rdfs:label "isascii" ;
+  rdfs:comment ""@en .
 
 <isblank> a c:Function ;
-  rdfs:label "isblank" .
+  rdfs:label "isblank" ;
+  rdfs:comment ""@en .
 
 <iscntrl> a c:Function ;
-  rdfs:label "iscntrl" .
+  rdfs:label "iscntrl" ;
+  rdfs:comment ""@en .
 
 <isdigit> a c:Function ;
-  rdfs:label "isdigit" .
+  rdfs:label "isdigit" ;
+  rdfs:comment ""@en .
 
 <isgraph> a c:Function ;
-  rdfs:label "isgraph" .
+  rdfs:label "isgraph" ;
+  rdfs:comment ""@en .
 
 <islower> a c:Function ;
-  rdfs:label "islower" .
+  rdfs:label "islower" ;
+  rdfs:comment ""@en .
 
 <isprint> a c:Function ;
-  rdfs:label "isprint" .
+  rdfs:label "isprint" ;
+  rdfs:comment ""@en .
 
 <ispunct> a c:Function ;
-  rdfs:label "ispunct" .
+  rdfs:label "ispunct" ;
+  rdfs:comment ""@en .
 
 <isspace> a c:Function ;
-  rdfs:label "isspace" .
+  rdfs:label "isspace" ;
+  rdfs:comment ""@en .
 
 <isupper> a c:Function ;
-  rdfs:label "isupper" .
+  rdfs:label "isupper" ;
+  rdfs:comment ""@en .
 
 <isxdigit> a c:Function ;
-  rdfs:label "isxdigit" .
+  rdfs:label "isxdigit" ;
+  rdfs:comment ""@en .

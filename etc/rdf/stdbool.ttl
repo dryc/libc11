@@ -1,0 +1,22 @@
+@base         <http://ablibc.org/stdbool/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Macros
+
+<__bool_true_false_are_defined> a c:Macro ;
+  rdfs:label "__bool_true_false_are_defined" ;
+  rdfs:comment ""@en .
+
+<bool> a c:Macro ;
+  rdfs:label "bool" ;
+  rdfs:comment ""@en .
+
+<false> a c:Macro ;
+  rdfs:label "false" ;
+  rdfs:comment ""@en .
+
+<true> a c:Macro ;
+  rdfs:label "true" ;
+  rdfs:comment ""@en .

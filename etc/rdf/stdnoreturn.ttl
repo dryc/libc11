@@ -1,0 +1,10 @@
+@base         <http://ablibc.org/stdnoreturn/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Macros
+
+<noreturn> a c:Macro ;
+  rdfs:label "noreturn" ;
+  rdfs:comment ""@en .

@@ -1,0 +1,28 @@
+@base         <http://ablibc.org/stdarg/> .
+@prefix c:    <http://ablibc.org/rdf/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Macros
+
+<va_arg> a c:Macro ;
+  rdfs:label "va_arg" ;
+  rdfs:comment ""@en .
+
+<va_copy> a c:Macro ;
+  rdfs:label "va_copy" ;
+  rdfs:comment ""@en .
+
+<va_end> a c:Macro ;
+  rdfs:label "va_end" ;
+  rdfs:comment ""@en .
+
+<va_start> a c:Macro ;
+  rdfs:label "va_start" ;
+  rdfs:comment ""@en .
+
+# Types
+
+<va_list> a c:Type ;
+  rdfs:label "va_list" ;
+  rdfs:comment ""@en .
