@@ -1,7 +1,7 @@
 # The RDFS/OWL vocabulary for <http://ablibc.org/>.
 
-@base         <http://ablibc.org/rdf/> .
-@prefix c:    <http://ablibc.org/rdf/> .
+@base         <http://ablibc.org/schema/> .
+@prefix c:    <http://ablibc.org/schema/> .
 @prefix dc:   <http://purl.org/dc/terms/> .
 @prefix doap: <http://usefulinc.com/ns/doap#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
