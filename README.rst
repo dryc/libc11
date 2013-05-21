@@ -1,7 +1,12 @@
 libc11
 ======
 
-This is a public domain implementation of the C11_ (ISO/IEC 9899:2011)
+.. image:: https://travis-ci.org/unlicensed/libc11.png?branch=master
+   :target: https://travis-ci.org/unlicensed/libc11
+   :align: right
+   :alt: Travis CI build status
+
+``libc11`` is a public domain implementation of the C11_ (ISO/IEC 9899:2011)
 standard library.
 
 .. _C11: http://en.wikipedia.org/wiki/C11_%28C_standard_revision%29

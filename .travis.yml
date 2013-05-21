@@ -1,0 +1,11 @@
+language: c
+compiler:
+  - clang
+  - gcc
+before_script:
+  - ./autogen.sh
+script:
+  - ./configure && make && make check
+branches:
+  only:
+    - master
