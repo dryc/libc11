@@ -33,7 +33,7 @@ Header          Spec                                         Status
 <fenv.h>        C11 7.6  Floating-point environment.         
 <float.h>       C11 7.7  Characteristics of floating types.  
 <inttypes.h>    C11 7.8  Format conversion of integer types. WIP
-<iso646.h>      C11 7.9  Alternative spellings.              WIP
+<iso646.h>      C11 7.9  Alternative spellings.              Implemented.
 <limits.h>      C11 7.10 Sizes of integer types.             WIP
 <locale.h>      C11 7.11 Localization.                       WIP
 <math.h>        C11 7.12 Mathematics.                        
