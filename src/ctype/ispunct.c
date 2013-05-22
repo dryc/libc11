@@ -8,5 +8,5 @@
 
 int
 ispunct(const int c) {
-  return (void)c, 0; // TODO
+  return isprint(c) && !isspace(c) && !isalnum(c); /* in the "C" locale */
 }
