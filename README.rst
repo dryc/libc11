@@ -67,6 +67,7 @@ Other Implementations
 ---------------------
 
 * PDCLib_ (public domain)
+* PDPCLIB_ (public domain)
 * Bionic_ (BSD)
 * dietlibc_ (GPL)
 * EGLIBC_ (LGPL)
@@ -77,6 +78,7 @@ Other Implementations
 * uClibc_ (LGPL)
 
 .. _PDCLib:   http://pdclib.e43.eu/
+.. _PDPCLIB:  http://pdos.sourceforge.net/
 .. _Bionic:   http://en.wikipedia.org/wiki/Bionic_%28software%29
 .. _dietlibc: http://en.wikipedia.org/wiki/Dietlibc
 .. _EGLIBC:   http://en.wikipedia.org/wiki/Embedded_GLIBC
