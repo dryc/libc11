@@ -5,6 +5,8 @@ include_HEADERS = \
   inttypes.h      \
   iso646.h        \
   limits.h        \
+  locale.h        \
+  signal.h        \
   stdalign.h      \
   stdarg.h        \
   stdatomic.h     \
