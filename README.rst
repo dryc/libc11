@@ -28,7 +28,7 @@ Header          Spec                                         Status
 =============== ======== =================================== =================
 <assert.h>      C11 7.2  Diagnostics.                        WIP
 <complex.h>     C11 7.3  Complex arithmetic.                 
-<ctype.h>       C11 7.4  Character handling.                 WIP
+<ctype.h>       C11 7.4  Character handling.                 Implemented.
 <errno.h>       C11 7.5  Errors.                             WIP
 <fenv.h>        C11 7.6  Floating-point environment.         
 <float.h>       C11 7.7  Characteristics of floating types.  

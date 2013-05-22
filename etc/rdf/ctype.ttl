@@ -56,3 +56,11 @@
 <isxdigit> a c:Function ;
   rdfs:label "isxdigit" ;
   rdfs:comment ""@en .
+
+<tolower> a c:Function ;
+  rdfs:label "tolower" ;
+  rdfs:comment ""@en .
+
+<toupper> a c:Function ;
+  rdfs:label "toupper" ;
+  rdfs:comment ""@en .

@@ -43,6 +43,10 @@ int isupper(int c);
 
 int isxdigit(int c);
 
+int tolower(int c);
+
+int toupper(int c);
+
 #ifdef __cplusplus
 } /* extern "C" */
 #endif

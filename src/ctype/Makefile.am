@@ -15,4 +15,6 @@ libcctype_la_SOURCES = \
   ispunct.c            \
   isspace.c            \
   isupper.c            \
-  isxdigit.c
+  isxdigit.c           \
+  tolower.c            \
+  toupper.c
