@@ -8,5 +8,5 @@
 
 int
 isgraph(const int c) {
-  return (void)c, 0; // TODO
+  return c >= 0x21 && c <= 0x7E; /* in the "C" locale */
 }
