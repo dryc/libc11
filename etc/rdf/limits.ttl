@@ -1,0 +1,82 @@
+@base         <http://libc11.org/limits/> .
+@prefix c:    <http://libc11.org/schema/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Macros
+
+<CHAR_BIT> a c:Macro ;
+  rdfs:label "CHAR_BIT" ;
+  rdfs:comment ""@en .
+
+<CHAR_MAX> a c:Macro ;
+  rdfs:label "CHAR_MAX" ;
+  rdfs:comment ""@en .
+
+<CHAR_MIN> a c:Macro ;
+  rdfs:label "CHAR_MIN" ;
+  rdfs:comment ""@en .
+
+<INT_MAX> a c:Macro ;
+  rdfs:label "INT_MAX" ;
+  rdfs:comment ""@en .
+
+<INT_MIN> a c:Macro ;
+  rdfs:label "INT_MIN" ;
+  rdfs:comment ""@en .
+
+<LLONG_MAX> a c:Macro ;
+  rdfs:label "LLONG_MAX" ;
+  rdfs:comment ""@en .
+
+<LLONG_MIN> a c:Macro ;
+  rdfs:label "LLONG_MIN" ;
+  rdfs:comment ""@en .
+
+<LONG_MAX> a c:Macro ;
+  rdfs:label "LONG_MAX" ;
+  rdfs:comment ""@en .
+
+<LONG_MIN> a c:Macro ;
+  rdfs:label "LONG_MIN" ;
+  rdfs:comment ""@en .
+
+<MB_LEN_MAX> a c:Macro ;
+  rdfs:label "MB_LEN_MAX" ;
+  rdfs:comment ""@en .
+
+<SCHAR_MAX> a c:Macro ;
+  rdfs:label "SCHAR_MAX" ;
+  rdfs:comment ""@en .
+
+<SCHAR_MIN> a c:Macro ;
+  rdfs:label "SCHAR_MIN" ;
+  rdfs:comment ""@en .
+
+<SHRT_MAX> a c:Macro ;
+  rdfs:label "SHRT_MAX" ;
+  rdfs:comment ""@en .
+
+<SHRT_MIN> a c:Macro ;
+  rdfs:label "SHRT_MIN" ;
+  rdfs:comment ""@en .
+
+<UCHAR_MAX> a c:Macro ;
+  rdfs:label "UCHAR_MAX" ;
+  rdfs:comment ""@en .
+
+<UINT_MAX> a c:Macro ;
+  rdfs:label "UINT_MAX" ;
+  rdfs:comment ""@en .
+
+<ULLONG_MAX> a c:Macro ;
+  rdfs:label "ULLONG_MAX" ;
+  rdfs:comment ""@en .
+
+<ULONG_MAX> a c:Macro ;
+  rdfs:label "ULONG_MAX" ;
+  rdfs:comment ""@en .
+
+<USHRT_MAX> a c:Macro ;
+  rdfs:label "USHRT_MAX" ;
+  rdfs:comment ""@en .
