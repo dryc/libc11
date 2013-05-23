@@ -8,7 +8,7 @@
  *
  * <stdarg.h> - Variable arguments.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdarg.h.html
+ * @see http://libc11.org/stdarg/
  */
 
 typedef __builtin_va_list va_list;

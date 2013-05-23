@@ -8,7 +8,7 @@
  *
  * <locale.h> - C11 7.11: Localization.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/locale.h.html
+ * @see http://libc11.org/locale/
  */
 
 #endif /* _LOCALE_H */

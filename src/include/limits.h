@@ -8,7 +8,7 @@
  *
  * <limits.h> - C11 7.10: Sizes of integer types.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/limits.h.html
+ * @see http://libc11.org/limits/
  */
 
 #define CHAR_BIT   8

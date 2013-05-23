@@ -8,7 +8,7 @@
  *
  * <stddef.h> - C11 7.19: Common definitions.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stddef.h.html
+ * @see http://libc11.org/stddef/
  */
 
 /**

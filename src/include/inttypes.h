@@ -8,7 +8,7 @@
  *
  * <inttypes.h> - Format conversion of integer types.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/inttypes.h.html
+ * @see http://libc11.org/inttypes/
  */
 
 #include <stdint.h>

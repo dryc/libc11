@@ -8,7 +8,7 @@
  *
  * <assert.h> - C11 7.2: Diagnostics.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/assert.h.html
+ * @see http://libc11.org/assert/
  */
 
 #undef assert

@@ -7,6 +7,8 @@
  * @file
  *
  * <stdatomic.h> - Atomics.
+ *
+ * @see http://libc11.org/stdatomic/
  */
 
 #endif /* _STDATOMIC_H */

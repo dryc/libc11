@@ -8,7 +8,7 @@
  *
  * <stdbool.h> - Boolean type and values.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdbool.h.html
+ * @see http://libc11.org/stdbool/
  */
 
 #ifndef __cplusplus

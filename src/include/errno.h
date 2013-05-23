@@ -8,7 +8,7 @@
  *
  * <errno.h> - Errors.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/errno.h.html
+ * @see http://libc11.org/errno/
  */
 
 #ifdef __cplusplus

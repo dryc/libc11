@@ -7,6 +7,8 @@
  * @file
  *
  * <stdalign.h> - C11 7.15: Alignment.
+ *
+ * @see http://libc11.org/stdalign/
  */
 
 #define alignas _Alignas

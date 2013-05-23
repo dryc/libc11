@@ -8,7 +8,7 @@
  *
  * <stdio.h> - Input/output.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdio.h.html
+ * @see http://libc11.org/stdio/
  */
 
 #include <stdarg.h> /* for va_list */

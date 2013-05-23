@@ -8,7 +8,7 @@
  *
  * <string.h> - String handling.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/string.h.html
+ * @see http://libc11.org/string/
  */
 
 #include <stddef.h> /* for NULL and size_t */

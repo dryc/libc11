@@ -8,7 +8,7 @@
  *
  * <ctype.h> - Character handling.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/ctype.h.html
+ * @see http://libc11.org/ctype/
  */
 
 #ifdef __cplusplus

@@ -8,7 +8,7 @@
  *
  * <iso646.h> - C11 7.9: Alternative spellings.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/iso646.h.html
+ * @see http://libc11.org/iso646/
  */
 
 #define and     &&

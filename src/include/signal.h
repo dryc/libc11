@@ -8,7 +8,7 @@
  *
  * <signal.h> - C11 7.14: Signal handling.
  *
- * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/signal.h.html
+ * @see http://libc11.org/signal/
  */
 
 #endif /* _SIGNAL_H */

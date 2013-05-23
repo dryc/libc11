@@ -7,6 +7,8 @@
  * @file
  *
  * <stdnoreturn.h> - _Noreturn.
+ *
+ * @see http://libc11.org/stdnoreturn/
  */
 
 #ifndef __cplusplus
