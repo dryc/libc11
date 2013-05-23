@@ -7,37 +7,61 @@ SUBDIRS = include
 
 SUBDIRS += assert
 
-SUBDIRS += complex
+if !DISABLE_COMPLEX
+  SUBDIRS += complex
+endif
 
-SUBDIRS += ctype
-libc_la_LIBADD += $(srcdir)/ctype/libcctype.la
+if !DISABLE_CTYPE
+  SUBDIRS += ctype
+  libc_la_LIBADD += $(srcdir)/ctype/libcctype.la
+endif
 
 SUBDIRS += errno
 
-SUBDIRS += fenv
+if !DISABLE_FENV
+  SUBDIRS += fenv
+endif
 
-SUBDIRS += inttypes
+if !DISABLE_INTTYPES
+  SUBDIRS += inttypes
+endif
 
-SUBDIRS += locale
+if !DISABLE_LOCALE
+  SUBDIRS += locale
+endif
 
-SUBDIRS += math
+if !DISABLE_MATH
+  SUBDIRS += math
+endif
 
-SUBDIRS += setjmp
+if !DISABLE_SETJMP
+  SUBDIRS += setjmp
+endif
 
-SUBDIRS += signal
+if !DISABLE_SIGNAL
+  SUBDIRS += signal
+endif
 
 SUBDIRS += stdarg
 
-SUBDIRS += stdio
-libc_la_LIBADD += $(srcdir)/stdio/libcstdio.la
+if !DISABLE_STDIO
+  SUBDIRS += stdio
+  libc_la_LIBADD += $(srcdir)/stdio/libcstdio.la
+endif
 
 SUBDIRS += stdlib
 
 SUBDIRS += string
 libc_la_LIBADD += $(srcdir)/string/libcstring.la
 
-SUBDIRS += threads
+if !DISABLE_THREADS
+  SUBDIRS += threads
+endif
 
-SUBDIRS += time
+if !DISABLE_TIME
+  SUBDIRS += time
+endif
 
-SUBDIRS += uchar
+if !DISABLE_UCHAR
+  SUBDIRS += uchar
+endif

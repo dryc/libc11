@@ -2,34 +2,58 @@ SUBDIRS = include
 
 SUBDIRS += assert
 
-SUBDIRS += complex
+if !DISABLE_COMPLEX
+  SUBDIRS += complex
+endif
 
-SUBDIRS += ctype
+if !DISABLE_CTYPE
+  SUBDIRS += ctype
+endif
 
 SUBDIRS += errno
 
-SUBDIRS += fenv
+if !DISABLE_FENV
+  SUBDIRS += fenv
+endif
 
-SUBDIRS += inttypes
+if !DISABLE_INTTYPES
+  SUBDIRS += inttypes
+endif
 
-SUBDIRS += locale
+if !DISABLE_LOCALE
+  SUBDIRS += locale
+endif
 
-SUBDIRS += math
+if !DISABLE_MATH
+  SUBDIRS += math
+endif
 
-SUBDIRS += setjmp
+if !DISABLE_SETJMP
+  SUBDIRS += setjmp
+endif
 
-SUBDIRS += signal
+if !DISABLE_SIGNAL
+  SUBDIRS += signal
+endif
 
 SUBDIRS += stdarg
 
-SUBDIRS += stdio
+if !DISABLE_STDIO
+  SUBDIRS += stdio
+endif
 
 SUBDIRS += stdlib
 
 SUBDIRS += string
 
-SUBDIRS += threads
+if !DISABLE_THREADS
+  SUBDIRS += threads
+endif
 
-SUBDIRS += time
+if !DISABLE_TIME
+  SUBDIRS += time
+endif
 
-SUBDIRS += uchar
+if !DISABLE_UCHAR
+  SUBDIRS += uchar
+endif

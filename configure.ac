@@ -53,6 +53,90 @@ AC_ARG_ENABLE([unicode],
   [AS_HELP_STRING([--disable-unicode], [omit support for Unicode strings])])
 AS_IF([test "x$enable_unicode" == "xno"],
   [AC_DEFINE([DISABLE_UNICODE], 1, [Define to disable Unicode string support.])])
+# --enable-complex/--disable-complex
+AC_ARG_ENABLE([complex],
+  [AS_HELP_STRING([--disable-complex], [omit support for the <complex.h> interface])])
+AS_IF([test "x$enable_complex" == "xno"], [
+  AC_DEFINE([DISABLE_COMPLEX], 1, [Define to omit the <complex.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_COMPLEX], [test "x$enable_complex" == "xno"])
+# --enable-ctype/--disable-ctype
+AC_ARG_ENABLE([ctype],
+  [AS_HELP_STRING([--disable-ctype], [omit support for the <ctype.h> interface])])
+AS_IF([test "x$enable_ctype" == "xno"], [
+  AC_DEFINE([DISABLE_CTYPE], 1, [Define to omit the <ctype.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_CTYPE], [test "x$enable_ctype" == "xno"])
+# --enable-fenv/--disable-fenv
+AC_ARG_ENABLE([fenv],
+  [AS_HELP_STRING([--disable-fenv], [omit support for the <fenv.h> interface])])
+AS_IF([test "x$enable_fenv" == "xno"], [
+  AC_DEFINE([DISABLE_FENV], 1, [Define to omit the <fenv.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_FENV], [test "x$enable_fenv" == "xno"])
+# --enable-inttypes/--disable-inttypes
+AC_ARG_ENABLE([inttypes],
+  [AS_HELP_STRING([--disable-inttypes], [omit support for the <inttypes.h> interface])])
+AS_IF([test "x$enable_inttypes" == "xno"], [
+  AC_DEFINE([DISABLE_INTTYPES], 1, [Define to omit the <inttypes.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_INTTYPES], [test "x$enable_inttypes" == "xno"])
+# --enable-locale/--disable-locale
+AC_ARG_ENABLE([locale],
+  [AS_HELP_STRING([--disable-locale], [omit support for the <locale.h> interface])])
+AS_IF([test "x$enable_locale" == "xno"], [
+  AC_DEFINE([DISABLE_LOCALE], 1, [Define to omit the <locale.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_LOCALE], [test "x$enable_locale" == "xno"])
+# --enable-math/--disable-math
+AC_ARG_ENABLE([math],
+  [AS_HELP_STRING([--disable-math], [omit support for the <math.h> interface])])
+AS_IF([test "x$enable_math" == "xno"], [
+  AC_DEFINE([DISABLE_MATH], 1, [Define to omit the <math.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_MATH], [test "x$enable_math" == "xno"])
+# --enable-setjmp/--disable-setjmp
+AC_ARG_ENABLE([setjmp],
+  [AS_HELP_STRING([--disable-setjmp], [omit support for the <setjmp.h> interface])])
+AS_IF([test "x$enable_setjmp" == "xno"], [
+  AC_DEFINE([DISABLE_SETJMP], 1, [Define to omit the <setjmp.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_SETJMP], [test "x$enable_setjmp" == "xno"])
+# --enable-signal/--disable-signal
+AC_ARG_ENABLE([signal],
+  [AS_HELP_STRING([--disable-signal], [omit support for the <signal.h> interface])])
+AS_IF([test "x$enable_signal" == "xno"], [
+  AC_DEFINE([DISABLE_SIGNAL], 1, [Define to omit the <signal.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_SIGNAL], [test "x$enable_signal" == "xno"])
+# --enable-stdio/--disable-stdio
+AC_ARG_ENABLE([stdio],
+  [AS_HELP_STRING([--disable-stdio], [omit support for the <stdio.h> interface])])
+AS_IF([test "x$enable_stdio" == "xno"], [
+  AC_DEFINE([DISABLE_STDIO], 1, [Define to omit the <stdio.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_STDIO], [test "x$enable_stdio" == "xno"])
+# --enable-threads/--disable-threads
+AC_ARG_ENABLE([threads],
+  [AS_HELP_STRING([--disable-threads], [omit support for the <threads.h> interface])])
+AS_IF([test "x$enable_threads" == "xno"], [
+  AC_DEFINE([DISABLE_THREADS], 1, [Define to omit the <threads.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_THREADS], [test "x$enable_threads" == "xno"])
+# --enable-time/--disable-time
+AC_ARG_ENABLE([time],
+  [AS_HELP_STRING([--disable-time], [omit support for the <time.h> interface])])
+AS_IF([test "x$enable_time" == "xno"], [
+  AC_DEFINE([DISABLE_TIME], 1, [Define to omit the <time.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_TIME], [test "x$enable_time" == "xno"])
+# --enable-uchar/--disable-uchar
+AC_ARG_ENABLE([uchar],
+  [AS_HELP_STRING([--disable-uchar], [omit support for the <uchar.h> interface])])
+AS_IF([test "x$enable_uchar" == "xno"], [
+  AC_DEFINE([DISABLE_UCHAR], 1, [Define to omit the <uchar.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_UCHAR], [test "x$enable_uchar" == "xno"])
 
 dnl Check for libraries:
 
