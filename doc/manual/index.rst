@@ -1,22 +1,54 @@
-.. libc11 documentation master file, created by
-   sphinx-quickstart on Thu May 23 22:26:00 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to libc11's documentation!
-==================================
-
-Contents:
+``libc11`` Manual
+=================
 
 .. toctree::
    :maxdepth: 2
 
+   intro
+   status
+   install
+   contrib
+   license
 
+Reference
+---------
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
 
+   assert/index
+   complex/index
+   ctype/index
+   errno/index
+   fenv/index
+   float/index
+   inttypes/index
+   iso646/index
+   limits/index
+   locale/index
+   math/index
+   setjmp/index
+   signal/index
+   stdalign/index
+   stdarg/index
+   stdatomic/index
+   stdbool/index
+   stddef/index
+   stdint/index
+   stdio/index
+   stdlib/index
+   stdnoreturn/index
+   string/index
+   tgmath/index
+   threads/index
+   time/index
+   uchar/index
+   wchar/index
+   wctype/index
+
+Indices and Tables
+------------------
+
+* :ref:`glossary`
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
-
