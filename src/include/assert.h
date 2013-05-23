@@ -6,10 +6,20 @@
 /**
  * @file
  *
- * <assert.h> - Diagnostics.
+ * <assert.h> - C11 7.2: Diagnostics.
  *
  * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/assert.h.html
  */
+
+#undef assert
+
+#ifdef NDEBUG
+#define assert(ignore) ((void)0)
+#else
+#define assert(ignore) ((void)0) // TODO
+#endif
+
+#define static_assert _Static_assert
 
 #ifdef __cplusplus
 extern "C" {

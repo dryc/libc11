@@ -34,7 +34,7 @@ Header          Spec                                         Status
 <float.h>       C11 7.7  Characteristics of floating types.  
 <inttypes.h>    C11 7.8  Format conversion of integer types. WIP
 <iso646.h>      C11 7.9  Alternative spellings.              Implemented.
-<limits.h>      C11 7.10 Sizes of integer types.             WIP
+<limits.h>      C11 7.10 Sizes of integer types.             Implemented.
 <locale.h>      C11 7.11 Localization.                       WIP
 <math.h>        C11 7.12 Mathematics.                        
 <setjmp.h>      C11 7.13 Nonlocal jumps.                     

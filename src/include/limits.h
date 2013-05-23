@@ -6,7 +6,7 @@
 /**
  * @file
  *
- * <limits.h> - Sizes of integer types.
+ * <limits.h> - C11 7.10: Sizes of integer types.
  *
  * @see http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/limits.h.html
  */
