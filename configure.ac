@@ -154,6 +154,10 @@ AS_CASE([$ax_cv_c_compiler_vendor],
             AM_LDFLAGS="$AM_LDFLAGS -XCClinker -nostdlib"],
   [gnu],   [AM_CPPFLAGS="$AM_CPPFLAGS -nostdinc"
             AM_LDFLAGS="$AM_LDFLAGS -XCClinker -nostdlib"],
+  [pcc],   [AM_CPPFLAGS="$AM_CPPFLAGS -nostdinc"
+            AM_LDFLAGS="$AM_LDFLAGS -XCClinker -nostdlib"],
+  [tcc],   [AM_CPPFLAGS="$AM_CPPFLAGS -nostdinc"
+            AM_LDFLAGS="$AM_LDFLAGS -XCClinker -nostdlib"],
   [AC_MSG_WARN([unsupported compiler: specify preprocessor/linker flags manually])])
 
 dnl Check for library functions:
