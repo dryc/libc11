@@ -7,4 +7,6 @@ libcstring_la_SOURCES = \
   memcmp.c              \
   memcpy.c              \
   memmove.c             \
-  memset.c
+  memset.c              \
+  strcmp.c              \
+  strncmp.c

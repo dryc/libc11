@@ -24,3 +24,11 @@
 <memset> a c:Function ;
   rdfs:label "memset" ;
   rdfs:comment ""@en .
+
+<strcmp> a c:Function ;
+  rdfs:label "strcmp" ;
+  rdfs:comment ""@en .
+
+<strncmp> a c:Function ;
+  rdfs:label "strncmp" ;
+  rdfs:comment ""@en .

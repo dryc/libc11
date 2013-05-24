@@ -42,6 +42,16 @@ void* memmove(void* s1, const void* s2, size_t n);
  */
 void* memset(void* s, int c, size_t n);
 
+/**
+ * C11 7.24.4.2
+ */
+int strcmp(const char* s1, const char* s2);
+
+/**
+ * C11 7.24.4.4
+ */
+int strncmp(const char* s1, const char* s2, size_t n);
+
 #ifdef __cplusplus
 } /* extern "C" */
 #endif
