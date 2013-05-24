@@ -52,6 +52,8 @@ AC_DEFUN([AX_COMPILER_VENDOR],
   vendors="intel:     __ICC,__ECC,__INTEL_COMPILER
            ibm:       __xlc__,__xlC__,__IBMC__,__IBMCPP__
            pathscale: __PATHCC__,__PATHSCALE__
+           tcc:       __TINYC__
+           pcc:       __PCC__
            clang:     __clang__
            gnu:       __GNUC__
            sun:       __SUNPRO_C,__SUNPRO_CC
