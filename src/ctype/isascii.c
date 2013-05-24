@@ -6,6 +6,10 @@
 
 #include <ctype.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 isascii(const int c) {
   return c >= 0 && c <= 0x7F; /* 7-bit ASCII */

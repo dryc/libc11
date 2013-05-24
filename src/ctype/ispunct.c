@@ -6,6 +6,10 @@
 
 #include <ctype.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 ispunct(const int c) {
   return isprint(c) && !isspace(c) && !isalnum(c); /* in the "C" locale */

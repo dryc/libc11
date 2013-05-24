@@ -6,6 +6,10 @@
 
 #include <stdio.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 sprintf(char* const restrict str,
         const char* const restrict format,

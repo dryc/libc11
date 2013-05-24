@@ -6,6 +6,10 @@
 
 #include <ctype.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 isdigit(const int c) {
   return c >= '0' && c <= '9';

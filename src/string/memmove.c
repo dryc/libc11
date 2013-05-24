@@ -6,6 +6,10 @@
 
 #include <string.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 void*
 memmove(void* s1,
         const void* s2,

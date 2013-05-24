@@ -6,6 +6,10 @@
 
 #include <ctype.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 islower(const int c) {
   return c >= 'a' && c <= 'z'; /* in the "C" locale */

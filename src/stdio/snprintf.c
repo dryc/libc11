@@ -6,6 +6,10 @@
 
 #include <stdio.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 snprintf(char* const restrict str,
          const size_t size,

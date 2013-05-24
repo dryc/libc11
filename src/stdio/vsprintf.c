@@ -8,6 +8,10 @@
 
 #include <stdarg.h> /* for va_*() */
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 vsprintf(char* restrict str,
          const char* restrict format,

@@ -6,6 +6,10 @@
 
 #include <ctype.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 isblank(const int c) {
   return c == ' ' || c == '\t'; /* in the "C" locale */

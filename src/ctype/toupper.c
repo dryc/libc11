@@ -6,6 +6,10 @@
 
 #include <ctype.h>
 
+/**
+ * @date   2013-05-24
+ * @author Arto Bendiken
+ */
 int
 toupper(const int c) {
   return islower(c) ? 'A' + (c - 'a') : c; /* in the "C" locale */
