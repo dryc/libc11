@@ -160,6 +160,10 @@ AB_CHECK_BUILTIN([__builtin_memcmp])
 AB_CHECK_BUILTIN([__builtin_memcpy])
 AB_CHECK_BUILTIN([__builtin_memmove])
 AB_CHECK_BUILTIN([__builtin_memset])
+AB_CHECK_BUILTIN([__builtin_va_arg])
+AB_CHECK_BUILTIN([__builtin_va_copy])
+AB_CHECK_BUILTIN([__builtin_va_end])
+AB_CHECK_BUILTIN([__builtin_va_start])
 
 dnl Check for system services:
 
