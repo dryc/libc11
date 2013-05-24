@@ -13,5 +13,12 @@
 int
 strcmp(const char* const s1,
        const char* const s2) {
-  return (void)s1, (void)s2, -1; // TODO
+  const unsigned char* p1 = (unsigned char*)s1;
+  const unsigned char* p2 = (unsigned char*)s2;
+
+  while (*p1 != '\0' && *p1 == *p2) {
+    p1++, p2++;
+  }
+
+  return *p1 - *p2;
 }
