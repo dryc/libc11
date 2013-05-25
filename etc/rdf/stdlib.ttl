@@ -5,16 +5,28 @@
 
 # Functions
 
+<_Exit> a c:Function ;
+  rdfs:label "_Exit" ;
+  rdfs:comment ""@en .
+
 <abort> a c:Function ;
   rdfs:label "abort" ;
+  rdfs:comment ""@en .
+
+<abs> a c:Function ;
+  rdfs:label "abs" ;
   rdfs:comment ""@en .
 
 <exit> a c:Function ;
   rdfs:label "exit" ;
   rdfs:comment ""@en .
 
-<_Exit> a c:Function ;
-  rdfs:label "_Exit" ;
+<labs> a c:Function ;
+  rdfs:label "labs" ;
+  rdfs:comment ""@en .
+
+<llabs> a c:Function ;
+  rdfs:label "llabs" ;
   rdfs:comment ""@en .
 
 <quick_exit> a c:Function ;

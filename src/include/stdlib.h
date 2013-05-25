@@ -18,9 +18,19 @@ extern "C" {
 #endif
 
 /**
+ * C11 7.22.4.5
+ */
+_Noreturn void _Exit(int status);
+
+/**
  * C11 7.22.4.1
  */
 _Noreturn void abort(void);
+
+/**
+ * C11 7.22.6.1
+ */
+int abs(int j);
 
 /**
  * C11 7.22.4.4
@@ -28,9 +38,14 @@ _Noreturn void abort(void);
 _Noreturn void exit(int status);
 
 /**
- * C11 7.22.4.5
+ * C11 7.22.6.1
  */
-_Noreturn void _Exit(int status);
+long int labs(long int j);
+
+/**
+ * C11 7.22.6.1
+ */
+long long int llabs(long long int j);
 
 /**
  * C11 7.22.4.7
