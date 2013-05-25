@@ -13,6 +13,9 @@
 
 #include <stdnoreturn.h> /* for _Noreturn */
 
+#define EXIT_FAILURE 1
+#define EXIT_SUCCESS 0
+
 #ifdef __cplusplus
 extern "C" {
 #endif
