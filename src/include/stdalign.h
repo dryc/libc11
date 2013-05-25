@@ -11,6 +11,11 @@
  * @see http://libc11.org/stdalign/
  */
 
+#if __STDC_VERSION__ < 201112L
+#define _Alignas
+#define _Alignof
+#endif
+
 #define alignas _Alignas
 
 #define alignof _Alignof
