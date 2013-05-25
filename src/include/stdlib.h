@@ -6,14 +6,31 @@
 /**
  * @file
  *
- * <stdlib.h> - General utilities.
+ * <stdlib.h> - C11 7.22: General utilities.
  *
  * @see http://libc11.org/stdlib/
  */
 
+#include <stdnoreturn.h> /* for _Noreturn */
+
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+/**
+ * C11 7.22.4.1
+ */
+_Noreturn void abort(void);
+
+/**
+ * C11 7.22.4.4
+ */
+_Noreturn void exit(int status);
+
+/**
+ * C11 7.22.4.5
+ */
+_Noreturn void _Exit(int status);
 
 #ifdef __cplusplus
 } /* extern "C" */

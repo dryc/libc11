@@ -50,6 +50,7 @@ if !DISABLE_STDIO
 endif
 
 SUBDIRS += stdlib
+libc_la_LIBADD += $(srcdir)/stdlib/libcstdlib.la
 
 SUBDIRS += string
 libc_la_LIBADD += $(srcdir)/string/libcstring.la

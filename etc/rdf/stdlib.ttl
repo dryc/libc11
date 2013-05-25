@@ -1,0 +1,18 @@
+@base         <http://libc11.org/stdlib/> .
+@prefix c:    <http://libc11.org/schema/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Functions
+
+<abort> a c:Function ;
+  rdfs:label "abort" ;
+  rdfs:comment ""@en .
+
+<exit> a c:Function ;
+  rdfs:label "exit" ;
+  rdfs:comment ""@en .
+
+<_Exit> a c:Function ;
+  rdfs:label "_Exit" ;
+  rdfs:comment ""@en .
