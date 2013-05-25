@@ -32,6 +32,11 @@ _Noreturn void exit(int status);
  */
 _Noreturn void _Exit(int status);
 
+/**
+ * C11 7.22.4.7
+ */
+_Noreturn void quick_exit(int status);
+
 #ifdef __cplusplus
 } /* extern "C" */
 #endif

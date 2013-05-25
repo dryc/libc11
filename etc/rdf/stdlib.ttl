@@ -16,3 +16,7 @@
 <_Exit> a c:Function ;
   rdfs:label "_Exit" ;
   rdfs:comment ""@en .
+
+<quick_exit> a c:Function ;
+  rdfs:label "quick_exit" ;
+  rdfs:comment ""@en .

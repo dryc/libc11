@@ -5,4 +5,5 @@ noinst_LTLIBRARIES = libcstdlib.la
 libcstdlib_la_SOURCES = \
   _Exit.c               \
   abort.c               \
-  exit.c
+  exit.c                \
+  quick_exit.c
