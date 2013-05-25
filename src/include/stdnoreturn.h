@@ -11,6 +11,10 @@
  * @see http://libc11.org/stdnoreturn/
  */
 
+#if __STDC_VERSION__ < 201112L
+#define _Noreturn
+#endif
+
 #ifndef __cplusplus
 #define noreturn _Noreturn
 #endif
