@@ -9,6 +9,7 @@
 /**
  * @date   2013-05-25
  * @author Arto Bendiken
+ * @see    http://libc11.org/stdlib/abort.html
  */
 void
 abort(void) {

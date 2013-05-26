@@ -11,6 +11,7 @@
 /**
  * @date   2013-05-24
  * @author Arto Bendiken
+ * @see    http://libc11.org/stdio/vsprintf.html
  */
 int
 vsprintf(char* restrict str,

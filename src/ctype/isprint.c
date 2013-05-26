@@ -9,6 +9,7 @@
 /**
  * @date   2013-05-24
  * @author Arto Bendiken
+ * @see    http://libc11.org/ctype/isprint.html
  */
 int
 isprint(const int c) {

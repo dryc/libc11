@@ -9,6 +9,7 @@
 /**
  * @date   2013-05-25
  * @author Arto Bendiken
+ * @see    http://libc11.org/stdlib/_Exit.html
  */
 void
 _Exit(const int status) {

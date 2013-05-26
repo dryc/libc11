@@ -9,6 +9,7 @@
 /**
  * @date   2013-05-24
  * @author Arto Bendiken
+ * @see    http://libc11.org/ctype/tolower.html
  */
 int
 tolower(const int c) {
