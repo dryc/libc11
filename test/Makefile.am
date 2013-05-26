@@ -57,3 +57,5 @@ endif
 if !DISABLE_UCHAR
   SUBDIRS += uchar
 endif
+
+SUBDIRS += unistd

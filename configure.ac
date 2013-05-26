@@ -197,6 +197,7 @@ AC_CONFIG_FILES([
   src/threads/Makefile
   src/time/Makefile
   src/uchar/Makefile
+  src/unistd/Makefile
   test/Makefile
   test/include/Makefile
   test/assert/Makefile
@@ -215,7 +216,8 @@ AC_CONFIG_FILES([
   test/string/Makefile
   test/threads/Makefile
   test/time/Makefile
-  test/uchar/Makefile])
+  test/uchar/Makefile
+  test/unistd/Makefile])
 AC_SUBST([AM_CPPFLAGS])
 AC_SUBST([AM_CFLAGS])
 AC_SUBST([AM_LDFLAGS])
