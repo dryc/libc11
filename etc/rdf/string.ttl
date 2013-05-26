@@ -29,6 +29,14 @@
   rdfs:label "strcmp" ;
   rdfs:comment ""@en .
 
+<strlen> a c:Function ;
+  rdfs:label "strlen" ;
+  rdfs:comment ""@en .
+
 <strncmp> a c:Function ;
   rdfs:label "strncmp" ;
+  rdfs:comment ""@en .
+
+<strnlen> a c:Function ;
+  rdfs:label "strnlen" ;
   rdfs:comment ""@en .

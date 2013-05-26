@@ -9,4 +9,6 @@ libcstring_la_SOURCES = \
   memmove.c             \
   memset.c              \
   strcmp.c              \
-  strncmp.c
+  strlen.c              \
+  strncmp.c             \
+  strnlen.c

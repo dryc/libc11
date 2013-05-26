@@ -48,9 +48,21 @@ void* memset(void* s, int c, size_t n);
 int strcmp(const char* s1, const char* s2);
 
 /**
+ * C11 7.24.6.3
+ */
+size_t strlen(const char* s);
+
+/**
  * C11 7.24.4.4
  */
 int strncmp(const char* s1, const char* s2, size_t n);
+
+#if defined(_POSIX_C_SOURCE) && _POSIX_C_SOURCE >= 200809L
+/**
+ * POSIX.1-2008
+ */
+size_t strnlen(const char* s, size_t maxlen);
+#endif
 
 #ifdef __cplusplus
 } /* extern "C" */
