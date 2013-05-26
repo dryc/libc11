@@ -6,6 +6,8 @@
 
 #include <stdlib.h>
 
+_Noreturn void __sys_exit(int status);
+
 /**
  * @date   2013-05-25
  * @author Arto Bendiken
@@ -13,5 +15,5 @@
  */
 void
 _Exit(const int status) {
-  (void)status; // TODO
+  __sys_exit(status);
 }

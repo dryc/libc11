@@ -36,6 +36,7 @@ AC_PROG_CC(clang gcc cc)
 AC_PROG_CC_C99
 AM_PROG_CC_C_O
 AC_PROG_CPP
+AM_PROG_AS
 m4_ifdef([AM_PROG_AR], [AM_PROG_AR])
 LT_INIT
 
@@ -198,6 +199,7 @@ AC_CONFIG_FILES([
   src/time/Makefile
   src/uchar/Makefile
   src/unistd/Makefile
+  sys/Makefile
   test/Makefile
   test/include/Makefile
   test/assert/Makefile
