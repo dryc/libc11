@@ -1,13 +1,13 @@
-CPPFLAGS = -nostdinc -I../../../src/include
+CPPFLAGS = -nostdinc -I$(DESTDIR)/include
 CFLAGS   =
-LDFLAGS  = -nostdlib -L../../../src/.libs -static
-LDADD    = -lc
+LDFLAGS  = -nostdlib -L$(DESTDIR)/lib -static
+LDADD    = $(DESTDIR)/lib/libc.a
 
 PROGRAMS = hello
 
 all: $(PROGRAMS)
 
-hello: ../../../sys/crt0.o hello.o
+hello: $(DESTDIR)/lib/libc11/crt0.o hello.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LDADD)
 
 hello.o: hello.c
