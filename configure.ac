@@ -149,6 +149,13 @@ dnl Check for structures:
 
 dnl Check for compiler characteristics:
 AC_CANONICAL_HOST
+AS_CASE([$host_cpu],
+  [x86_64], [],
+  [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
+AS_CASE([$host_os],
+  [darwin*], [host_os="darwin"],
+  [linux*],  [host_os="linux"],
+  [AC_MSG_ERROR([unsupported OS platform: $host_os])])
 AX_COMPILER_VENDOR
 AS_CASE([$ax_cv_c_compiler_vendor],
   [clang], [AM_CPPFLAGS="$AM_CPPFLAGS -nostdinc"
@@ -200,6 +207,10 @@ AC_CONFIG_FILES([
   src/uchar/Makefile
   src/unistd/Makefile
   sys/Makefile
+  sys/darwin/Makefile
+  sys/darwin/x86_64/Makefile
+  sys/linux/Makefile
+  sys/linux/x86_64/Makefile
   test/Makefile
   test/include/Makefile
   test/assert/Makefile
@@ -223,6 +234,9 @@ AC_CONFIG_FILES([
 AC_SUBST([AM_CPPFLAGS])
 AC_SUBST([AM_CFLAGS])
 AC_SUBST([AM_LDFLAGS])
+AC_SUBST([HOST_CPU], [$host_cpu])
+AC_SUBST([HOST_VENDOR], [$host_vendor])
+AC_SUBST([HOST_OS], [$host_os])
 AC_SUBST([PACKAGE_VERSION_MAJOR], ["VERSION_MAJOR"])
 AC_SUBST([PACKAGE_VERSION_MINOR], ["VERSION_MINOR"])
 AC_SUBST([PACKAGE_VERSION_PATCH], ["VERSION_PATCH"])
