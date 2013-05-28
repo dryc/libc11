@@ -153,8 +153,9 @@ AS_CASE([$host_cpu],
   [x86_64], [],
   [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
 AS_CASE([$host_os],
-  [darwin*], [host_os="darwin"],
-  [linux*],  [host_os="linux"],
+  [darwin*],  [host_os="darwin"],
+  [linux*],   [host_os="linux"],
+  [openbsd*], [host_os="bsd"],
   [AC_MSG_ERROR([unsupported OS platform: $host_os])])
 AX_COMPILER_VENDOR
 AS_CASE([$ax_cv_c_compiler_vendor],
@@ -207,6 +208,8 @@ AC_CONFIG_FILES([
   src/uchar/Makefile
   src/unistd/Makefile
   sys/Makefile
+  sys/bsd/Makefile
+  sys/bsd/x86_64/Makefile
   sys/darwin/Makefile
   sys/darwin/x86_64/Makefile
   sys/linux/Makefile
