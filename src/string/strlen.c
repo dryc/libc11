@@ -7,11 +7,15 @@
 #include <string.h>
 
 /**
- * @date   2013-05-26
+ * @date   2013-06-11
  * @author Arto Bendiken
  * @see    http://libc11.org/string/strlen.html
  */
 size_t
 strlen(const char* const s) {
-  return (void)s, 0; // TODO
+  const char* p = s;
+  while (*p++ != '\0') {
+    /* no-op */
+  }
+  return p - s;
 }
