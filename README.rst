@@ -24,7 +24,7 @@ Current Status
 This table summarizes which C11 features are implemented at present:
 
 =============== ======== =================================== =================
-Header          Spec                                         Status
+Header          Spec     Description                         Status
 =============== ======== =================================== =================
 <assert.h>      C11 7.2  Diagnostics.                        WIP
 <complex.h>     C11 7.3  Complex arithmetic.                 
@@ -63,8 +63,35 @@ Header          Spec                                         Status
 
 .. [2] Purposely omitted from the library.
 
-Other Implementations
----------------------
+Installation
+------------
+
+Installation on Unix
+^^^^^^^^^^^^^^^^^^^^
+
+::
+
+   $ ./autogen.sh
+   $ ./configure
+   $ make
+   $ sudo make install
+   $ sudo ldconfig                      # on Linux
+
+Elsewhere
+---------
+
+Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
+and `Travis CI`_.
+
+.. _GitHub:      http://github.com/unlicensed/libc11
+.. _Bitbucket:   http://bitbucket.org/unlicensed/libc11
+.. _Ohloh:       http://www.ohloh.net/p/libc11
+.. _Freecode:    http://freecode.com/projects/libc11
+.. _SourceForge: http://sourceforge.net/projects/libc11/
+.. _Travis CI:   http://travis-ci.org/unlicensed/libc11
+
+Many other open-source implementations of the C standard library exist,
+though most of them are licensed more restrictively than this implementation:
 
 * PDCLib_ (public domain)
 * PDPCLIB_ (public domain)
@@ -88,18 +115,20 @@ Other Implementations
 .. _Newlib:   http://en.wikipedia.org/wiki/Newlib
 .. _uClibc:   http://en.wikipedia.org/wiki/UClibc
 
-Elsewhere
+Author
+------
+
+* `Arto Bendiken <https://github.com/bendiken>`_ - http://ar.to/
+
+Donations
 ---------
 
-Find the project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
-and `Travis CI`_.
+If you found this software useful and would like to encourage its
+maintenance and further development, please consider making a donation to
+the `Bitcoin`_ wallet address `1AiNcRvhxJQbBJ98Rcpyc8gtF3dGy8AxGQ`__.
 
-.. _GitHub:      http://github.com/unlicensed/libc11
-.. _Bitbucket:   http://bitbucket.org/unlicensed/libc11
-.. _Ohloh:       http://www.ohloh.net/p/libc11
-.. _Freecode:    http://freecode.com/projects/libc11
-.. _SourceForge: http://sourceforge.net/projects/libc11/
-.. _Travis CI:   http://travis-ci.org/unlicensed/libc11
+.. _Bitcoin: http://en.wikipedia.org/wiki/Bitcoin
+.. __: bitcoin:1AiNcRvhxJQbBJ98Rcpyc8gtF3dGy8AxGQ?label=libc11.org&message=Donation
 
 License
 -------
