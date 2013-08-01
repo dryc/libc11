@@ -10,7 +10,7 @@ all: $(PROGRAMS)
 hello: $(DESTDIR)/lib/libc11/crt0.o hello.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LDADD)
 
-hello.o: hello.c
+%.o: %.c
 	$(CC) $(CPPFLAGS) $(CFLAGS) -c -o $@ $<
 
 clean:
