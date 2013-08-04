@@ -168,6 +168,15 @@ AS_CASE([$ax_cv_c_compiler_vendor],
   [tcc],   [AM_CPPFLAGS="$AM_CPPFLAGS -nostdinc"
             AM_LDFLAGS="$AM_LDFLAGS -XCClinker -nostdlib"],
   [AC_MSG_WARN([unsupported compiler: specify preprocessor/linker flags manually])])
+AM_CPPFLAGS="$AM_CPPFLAGS -I\$(top_srcdir)/src/include"
+TEST_CPPFLAGS="$AM_CPPFLAGS"
+AM_CPPFLAGS="$AM_CPPFLAGS -I\$(top_srcdir)/src"
+AM_CFLAGS="$AM_CFLAGS"
+TEST_CFLAGS="$AM_CFLAGS"
+AM_LDFLAGS="$AM_LDFLAGS"
+TEST_LDFLAGS="$AM_LDFLAGS"
+TEST_LDFLAGS="$TEST_LDFLAGS -L\$(top_srcdir)/src -static"
+TEST_LDFLAGS="$TEST_LDFLAGS -XCClinker \$(top_srcdir)/sys/\$(HOST_OS)/\$(HOST_CPU)/crt0.o"
 
 dnl Check for library functions:
 AB_CHECK_BUILTIN([__builtin_memchr])
@@ -237,6 +246,9 @@ AC_CONFIG_FILES([
 AC_SUBST([AM_CPPFLAGS])
 AC_SUBST([AM_CFLAGS])
 AC_SUBST([AM_LDFLAGS])
+AC_SUBST([TEST_CPPFLAGS])
+AC_SUBST([TEST_CFLAGS])
+AC_SUBST([TEST_LDFLAGS])
 AC_SUBST([HOST_CPU], [$host_cpu])
 AC_SUBST([HOST_VENDOR], [$host_vendor])
 AC_SUBST([HOST_OS], [$host_os])

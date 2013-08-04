@@ -1,6 +1,6 @@
-AM_CPPFLAGS += -I$(top_srcdir)/src/include
-AM_LDFLAGS  += -L$(top_srcdir)/src -static
-AM_LDFLAGS  += -XCClinker $(top_srcdir)/sys/$(HOST_OS)/$(HOST_CPU)/crt0.o
+AM_CPPFLAGS += $(TEST_CPPFLAGS)
+AM_CFLAGS   += $(TEST_CFLAGS)
+AM_LDFLAGS  += $(TEST_LDFLAGS)
 
 LDADD = $(top_srcdir)/src/libc.la
 
