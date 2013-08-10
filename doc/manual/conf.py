@@ -205,7 +205,7 @@ latex_documents = [
 #latex_domain_indices = True
 
 # -- Options for manual page output --------------------------------------------
-# http://sphinx.pocoo.org/config.html#options-for-manual-page-output
+# http://sphinx-doc.org/config.html#options-for-manual-page-output
 
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
@@ -253,7 +253,7 @@ man_pages = [
 man_show_urls = False
 
 # -- Options for Texinfo output ------------------------------------------------
-# http://sphinx.pocoo.org/config.html#options-for-texinfo-output
+# http://sphinx-doc.org/config.html#options-for-texinfo-output
 
 # Grouping the document tree into Texinfo files. List of tuples
 # (source start file, target name, title, author,
