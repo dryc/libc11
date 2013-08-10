@@ -1,0 +1,4 @@
+Nice to Have
+------------
+
+- Sphinx :doc: cross-references ought not to get rendered with <em> tags.

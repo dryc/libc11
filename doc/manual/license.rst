@@ -3,6 +3,8 @@
 License
 =======
 
+``libc11`` is 100% free and unencumbered public domain software.
+
 ::
 
    This is free and unencumbered software released into the public domain.

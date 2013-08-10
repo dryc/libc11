@@ -7,14 +7,16 @@
    intro
    status
    install
+   faq
    contrib
+   notes
    license
 
 Reference
 ---------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
    assert/index
    complex/index

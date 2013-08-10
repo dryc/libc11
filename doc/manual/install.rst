@@ -3,6 +3,25 @@
 Installation
 ============
 
+Configuring the Build
+---------------------
+
+TODO
+
+Installing on Unix
+------------------
+
+.. code-block:: bash
+
+   $ ./autogen.sh
+   $ ./configure
+   $ make
+   $ sudo make install
+   $ sudo ldconfig                      # on Linux
+
+Platform Compatibility
+----------------------
+
 At present, ``libc11`` has been successfully built and tested with the
 following compilers and platforms:
 
