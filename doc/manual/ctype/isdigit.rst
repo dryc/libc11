@@ -1,5 +1,5 @@
-``_Exit()``
-===========
+``isdigit()``
+=============
 
 .. only:: man
 
@@ -11,6 +11,6 @@
 Synopsis
 --------
 
-.. describe:: #include <stdlib.h>
+.. describe:: #include <ctype.h>
 
-.. c:function:: void _Exit(int status)
+.. c:function:: int isdigit(int c)

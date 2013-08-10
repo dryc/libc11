@@ -1,5 +1,5 @@
-``_Exit()``
-===========
+``quick_exit()``
+================
 
 .. only:: man
 
@@ -13,4 +13,4 @@ Synopsis
 
 .. describe:: #include <stdlib.h>
 
-.. c:function:: void _Exit(int status)
+.. c:function:: void quick_exit(int status)

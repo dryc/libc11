@@ -1,5 +1,5 @@
-``_Exit()``
-===========
+``isalpha()``
+=============
 
 .. only:: man
 
@@ -11,6 +11,6 @@
 Synopsis
 --------
 
-.. describe:: #include <stdlib.h>
+.. describe:: #include <ctype.h>
 
-.. c:function:: void _Exit(int status)
+.. c:function:: int isalpha(int c)

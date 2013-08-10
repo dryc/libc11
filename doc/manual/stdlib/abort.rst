@@ -1,4 +1,4 @@
-``_Exit()``
+``abort()``
 ===========
 
 .. only:: man
@@ -13,4 +13,4 @@ Synopsis
 
 .. describe:: #include <stdlib.h>
 
-.. c:function:: void _Exit(int status)
+.. c:function:: void abort(void)

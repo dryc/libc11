@@ -1,4 +1,4 @@
-``_Exit()``
+``llabs()``
 ===========
 
 .. only:: man
@@ -13,4 +13,4 @@ Synopsis
 
 .. describe:: #include <stdlib.h>
 
-.. c:function:: void _Exit(int status)
+.. c:function:: long long int llabs(long long int j)

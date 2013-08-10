@@ -7,3 +7,9 @@
    :maxdepth: 1
 
    _Exit
+   abort
+   abs
+   exit
+   labs
+   llabs
+   quick_exit

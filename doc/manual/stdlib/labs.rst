@@ -1,5 +1,5 @@
-``_Exit()``
-===========
+``labs()``
+==========
 
 .. only:: man
 
@@ -13,4 +13,4 @@ Synopsis
 
 .. describe:: #include <stdlib.h>
 
-.. c:function:: void _Exit(int status)
+.. c:function:: long int labs(long int j)
