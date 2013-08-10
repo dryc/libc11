@@ -1,5 +1,5 @@
 Current Status
---------------
+==============
 
 This table summarizes which C11 features are implemented at present:
 
