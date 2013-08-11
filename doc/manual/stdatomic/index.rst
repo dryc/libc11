@@ -1,4 +1,4 @@
-.. index:: <stdatomic.h>
+.. c:header:: <stdatomic.h>
 
 ``<stdatomic.h>`` Atomics
 =========================

@@ -1,4 +1,4 @@
-.. index:: <stdio.h>
+.. c:header:: <stdio.h>
 
 ``<stdio.h>`` Input/output
 ==========================

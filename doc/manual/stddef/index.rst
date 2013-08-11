@@ -1,4 +1,4 @@
-.. index:: <stddef.h>
+.. c:header:: <stddef.h>
 
 ``<stddef.h>`` Common definitions
 =================================

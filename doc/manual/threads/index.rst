@@ -1,4 +1,4 @@
-.. index:: <threads.h>
+.. c:header:: <threads.h>
 
 ``<threads.h>`` Threads
 =======================

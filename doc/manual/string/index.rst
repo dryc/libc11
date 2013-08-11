@@ -1,4 +1,4 @@
-.. index:: <string.h>
+.. c:header:: <string.h>
 
 ``<string.h>`` String handling
 ==============================

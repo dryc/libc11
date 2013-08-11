@@ -1,4 +1,4 @@
-.. index:: <complex.h>
+.. c:header:: <complex.h>
 
 ``<complex.h>`` Complex arithmetic
 ==================================

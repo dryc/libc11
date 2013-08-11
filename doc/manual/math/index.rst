@@ -1,4 +1,4 @@
-.. index:: <math.h>
+.. c:header:: <math.h>
 
 ``<math.h>`` Mathematics
 ========================

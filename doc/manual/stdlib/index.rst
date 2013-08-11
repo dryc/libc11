@@ -1,4 +1,4 @@
-.. index:: <stdlib.h>
+.. c:header:: <stdlib.h>
 
 ``<stdlib.h>`` General utilities
 ================================

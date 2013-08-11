@@ -1,4 +1,4 @@
-.. index:: <ctype.h>
+.. c:header:: <ctype.h>
 
 ``<ctype.h>`` Character handling
 ================================

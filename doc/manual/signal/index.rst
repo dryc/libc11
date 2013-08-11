@@ -1,4 +1,4 @@
-.. index:: <signal.h>
+.. c:header:: <signal.h>
 
 ``<signal.h>`` Signal handling
 ==============================
