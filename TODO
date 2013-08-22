@@ -2,3 +2,19 @@ Nice to Have
 ------------
 
 - Sphinx :doc: cross-references ought not to get rendered with <em> tags.
+
+POSIX.1-2008
+------------
+
+- fmemopen()
+  http://pubs.opengroup.org/onlinepubs/9699919799/functions/fmemopen.html
+- open_memstream()
+  http://pubs.opengroup.org/onlinepubs/9699919799/functions/open_memstream.html
+
+GNU Extensions
+--------------
+
+- fopencookie()
+  http://www.gnu.org/software/libc/manual/html_node/Streams-and-Cookies.html
+  http://www.gnu.org/software/gnulib/manual/html_node/fopencookie.html
+  http://man7.org/linux/man-pages/man3/fopencookie.3.html
