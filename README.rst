@@ -1,8 +1,8 @@
 libc11: C11 standard library
 ============================
 
-.. image:: https://travis-ci.org/unlicensed/libc11.png?branch=master
-   :target: https://travis-ci.org/unlicensed/libc11
+.. image:: https://travis-ci.org/dryproject/libc11.png?branch=master
+   :target: https://travis-ci.org/dryproject/libc11
    :align: right
    :alt: Travis CI build status
 
@@ -83,12 +83,12 @@ Elsewhere
 Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
 `Travis CI`_, Twitter_, and Tumblr_.
 
-.. _GitHub:      http://github.com/unlicensed/libc11
-.. _Bitbucket:   http://bitbucket.org/unlicensed/libc11
+.. _GitHub:      http://github.com/dryproject/libc11
+.. _Bitbucket:   http://bitbucket.org/dryproject/libc11
 .. _Ohloh:       http://www.ohloh.net/p/libc11
 .. _Freecode:    http://freecode.com/projects/libc11
 .. _SourceForge: http://sourceforge.net/projects/libc11/
-.. _Travis CI:   http://travis-ci.org/unlicensed/libc11
+.. _Travis CI:   http://travis-ci.org/dryproject/libc11
 .. _Twitter:     http://twitter.com/libc11
 .. _Tumblr:      http://libc11.tumblr.com/
 

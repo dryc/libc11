@@ -4,7 +4,7 @@ Reporting Bugs and Issues
 =========================
 
 Please report bugs to the issue tracker at:
-https://github.com/unlicensed/libc11/issues.
+https://github.com/dryproject/libc11/issues.
 
 .. note::
 

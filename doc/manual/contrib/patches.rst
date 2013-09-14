@@ -4,7 +4,7 @@ Contributing Patches
 ====================
 
 If you wish to contribute a patch, please open a `pull request`__ at:
-https://github.com/unlicensed/libc11/pulls
+https://github.com/dryproject/libc11/pulls
 
 __ https://help.github.com/articles/using-pull-requests
 
@@ -35,7 +35,7 @@ Clone the Source Repository
 
 .. code-block:: bash
 
-   $ git clone https://github.com/unlicensed/libc11.git
+   $ git clone https://github.com/dryproject/libc11.git
 
 .. code-block:: bash
 

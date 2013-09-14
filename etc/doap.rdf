@@ -7,7 +7,7 @@
   <doap:Project rdf:about="http://libc11.org/">
     <dc:creator rdf:resource="http://ar.to/#self"/>
     <doap:blog rdf:resource="http://ar.to/"/>
-    <doap:bug-database rdf:resource="https://github.com/unlicensed/libc11/issues"/>
+    <doap:bug-database rdf:resource="https://github.com/dryproject/libc11/issues"/>
     <doap:created>2013-05-18</doap:created>
     <doap:description xml:lang="en">
       A public domain implementation of the C11 standard library.
