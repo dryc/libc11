@@ -81,7 +81,7 @@ Elsewhere
 ---------
 
 Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
-`Travis CI`_, Twitter_, and Tumblr_.
+`Travis CI`_, Twitter_, Tumblr_, and COD5_.
 
 .. _GitHub:      http://github.com/dryproject/libc11
 .. _Bitbucket:   http://bitbucket.org/dryproject/libc11
@@ -91,6 +91,7 @@ Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
 .. _Travis CI:   http://travis-ci.org/dryproject/libc11
 .. _Twitter:     http://twitter.com/libc11
 .. _Tumblr:      http://libc11.tumblr.com/
+.. _COD5:        http://www.cod5.org/archive/l/libc11.html
 
 Many other open-source implementations of the C standard library exist,
 though most of them are licensed more restrictively than this implementation:
