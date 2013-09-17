@@ -120,6 +120,8 @@ though most of them are licensed more restrictively than this implementation:
 Author
 ------
 
+This project is part of the `DRY <http://dryproject.org/>`_ initiative.
+
 * `Arto Bendiken <https://github.com/bendiken>`_ - http://ar.to/
 
 Donations
