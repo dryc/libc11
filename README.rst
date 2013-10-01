@@ -105,6 +105,7 @@ though most of them are licensed more restrictively than this implementation:
 * klibc_ (GPL/BSD)
 * musl_ (MIT)
 * Newlib_ (LGPL/BSD/etc)
+* olibc_ (BSD)
 * uClibc_ (LGPL)
 
 .. _PDCLib:   http://pdclib.e43.eu/
@@ -116,6 +117,7 @@ though most of them are licensed more restrictively than this implementation:
 .. _klibc:    http://en.wikipedia.org/wiki/Klibc
 .. _musl:     http://en.wikipedia.org/wiki/Musl
 .. _Newlib:   http://en.wikipedia.org/wiki/Newlib
+.. _olibc:    http://olibc.github.io/
 .. _uClibc:   http://en.wikipedia.org/wiki/UClibc
 
 Author
