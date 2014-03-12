@@ -3,9 +3,10 @@ Current Status
 
 This table summarizes which C11 features are implemented at present:
 
-=============== ======== =================================== =================
+Nonlocal jumps
+=============== ======== =================================== ===================
 Header          Spec     Description                         Status
-=============== ======== =================================== =================
+=============== ======== =================================== ===================
 <assert.h>      C11 7.2  Diagnostics.                        WIP
 <complex.h>     C11 7.3  Complex arithmetic.                 
 <ctype.h>       C11 7.4  Character handling.                 Implemented.
@@ -35,7 +36,7 @@ Header          Spec     Description                         Status
 <uchar.h>       C11 7.28 Unicode utilities.                  
 <wchar.h>       C11 7.29 Wide character utilities.           Omitted. [2]_
 <wctype.h>      C11 7.30 Wide character utilities.           Omitted. [2]_
-=============== ======== =================================== =================
+=============== ======== =================================== ===================
 
 .. rubric:: Footnotes
 
