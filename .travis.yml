@@ -1,11 +1,10 @@
 language: c
 compiler:
-  - clang
   - gcc
 before_script:
   - ./autogen.sh
 script:
-  - if [ ${COVERITY_SCAN_BRANCH} != 1 ]; then ./configure && make && make check; fi
+  - if [ "$COVERITY_SCAN_BRANCH" != 1 ]; then ./configure && make && make check; fi
 branches:
   only:
     - master
