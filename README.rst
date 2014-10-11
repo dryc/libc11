@@ -3,12 +3,10 @@ libc11: C11 standard library
 
 .. image:: https://travis-ci.org/dryproject/libc11.png?branch=master
    :target: https://travis-ci.org/dryproject/libc11
-   :align: right
    :alt: Travis CI build status
 
 .. image:: https://scan.coverity.com/projects/3219/badge.svg
    :target: https://scan.coverity.com/projects/3219
-   :align: right
    :alt: Coverity Scan build status
 
 ``libc11`` is a public domain implementation of the C11_ (ISO/IEC 9899:2011)
