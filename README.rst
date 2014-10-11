@@ -84,17 +84,18 @@ Elsewhere
 ---------
 
 Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
-`Travis CI`_, Twitter_, Tumblr_, and COD5_.
+`Travis CI`_, `Coverity Scan`_, Twitter_, Tumblr_, and COD5_.
 
-.. _GitHub:      http://github.com/dryproject/libc11
-.. _Bitbucket:   http://bitbucket.org/dryproject/libc11
-.. _Ohloh:       http://www.ohloh.net/p/libc11
-.. _Freecode:    http://freecode.com/projects/libc11
-.. _SourceForge: http://sourceforge.net/projects/libc11/
-.. _Travis CI:   http://travis-ci.org/dryproject/libc11
-.. _Twitter:     http://twitter.com/libc11
-.. _Tumblr:      http://libc11.tumblr.com/
-.. _COD5:        http://www.cod5.org/archive/l/libc11.html
+.. _GitHub:        http://github.com/dryproject/libc11
+.. _Bitbucket:     http://bitbucket.org/dryproject/libc11
+.. _Ohloh:         http://www.ohloh.net/p/libc11
+.. _Freecode:      http://freecode.com/projects/libc11
+.. _SourceForge:   http://sourceforge.net/projects/libc11/
+.. _Travis CI:     http://travis-ci.org/dryproject/libc11
+.. _Twitter:       http://twitter.com/libc11
+.. _Tumblr:        http://libc11.tumblr.com/
+.. _COD5:          http://www.cod5.org/archive/l/libc11.html
+.. _Coverity Scan: http://scan.coverity.com/projects/3219
 
 Many other open-source implementations of the C standard library exist,
 though most of them are licensed more restrictively than this implementation:
