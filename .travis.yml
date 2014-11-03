@@ -1,3 +1,4 @@
+# https://travis-ci.org/dryproject/libc11
 language: c
 compiler:
   - clang
@@ -14,7 +15,7 @@ branches:
 # https://scan.coverity.com/projects/3219
 env:
   global:
-  - secure: "RDJaKmhYWNqxy/ou+zuHcJIdOQ24UIy/9WH6A6sAxCQS9dkzKOdrJi68utDrmRb1uy2gy4om42XyJ+93dLAQuQvFBEI34x0fGyahBbHW6nZk/EWdpGYN3tDr5ZzOySdkfJkac+1By7mYrdvO9zFU7SQJQbxxgOiaeqF0JEH9z6I="
+  - secure: "RDJaKmhYWNqxy/ou+zuHcJIdOQ24UIy/9WH6A6sAxCQS9dkzKOdrJi68utDrmRb1uy2gy4om42XyJ+93dLAQuQvFBEI34x0fGyahBbHW6nZk/EWdpGYN3tDr5ZzOySdkfJkac+1By7mYrdvO9zFU7SQJQbxxgOiaeqF0JEH9z6I=" # COVERITY_SCAN_TOKEN
 addons:
   coverity_scan:
     project:

@@ -1,7 +1,8 @@
+****************************
 libc11: C11 standard library
-============================
+****************************
 
-.. image:: https://travis-ci.org/dryproject/libc11.png?branch=master
+.. image:: https://api.travis-ci.org/dryproject/libc11.svg?branch=master
    :target: https://travis-ci.org/dryproject/libc11
    :alt: Travis CI build status
 
@@ -15,7 +16,7 @@ standard library.
 .. _C11: http://en.wikipedia.org/wiki/C11_%28C_standard_revision%29
 
 Features
---------
+========
 
 * No build prerequisites beyond the Autotools toolchain and a C99 compiler.
 * 100% free and unencumbered `public domain <http://unlicense.org/>`_ software,
@@ -67,10 +68,10 @@ Header          Spec     Description                         Status
 .. [2] Purposely omitted from the library.
 
 Installation
-------------
+============
 
 Installation on Unix
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 ::
 
@@ -81,7 +82,7 @@ Installation on Unix
    $ sudo ldconfig                      # on Linux
 
 Elsewhere
----------
+=========
 
 Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
 `Travis CI`_, `Coverity Scan`_, Twitter_, Tumblr_, and COD5_.
@@ -125,24 +126,24 @@ though most of them are licensed more restrictively than this implementation:
 .. _uClibc:   http://en.wikipedia.org/wiki/UClibc
 
 Author
-------
+======
 
 This project is part of the `DRY <http://dryproject.org/>`_ initiative.
 
 * `Arto Bendiken <https://github.com/bendiken>`_ - http://ar.to/
 
 Donations
----------
+=========
 
 If you found this software useful and would like to encourage its
-maintenance and further development, please consider making a donation to
-the `Bitcoin`_ wallet address `1AiNcRvhxJQbBJ98Rcpyc8gtF3dGy8AxGQ`__.
+maintenance and further development, please consider making a $5 donation
+to the author(s) via Gratipay_ or Bitcoin_.
 
-.. _Bitcoin: http://en.wikipedia.org/wiki/Bitcoin
-.. __: bitcoin:1AiNcRvhxJQbBJ98Rcpyc8gtF3dGy8AxGQ?label=libc11.org&message=Donation
+.. _Gratipay: https://gratipay.com/bendiken/
+.. _Bitcoin:  bitcoin:1G9DcLHQTYMXWMJVWgnPaBJ4vuiYYkV4d7?label=libc11.org&message=Donation
 
 License
--------
+=======
 
 This is free and unencumbered public domain software. For more information,
 see http://unlicense.org/ or the accompanying ``UNLICENSE`` file.
