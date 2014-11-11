@@ -29,7 +29,7 @@ extensions = [
   'sphinx.ext.todo',
   'sphinx.ext.mathjax',
   'sphinx.ext.ifconfig',
-  'cheader', # file:.extensions/cheader.py
+  'sphinxcontrib.cheader' # https://pypi.python.org/pypi/sphinxcontrib-cheader
 ]
 
 # Add any paths that contain templates here, relative to this directory.
