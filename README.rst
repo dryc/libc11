@@ -47,7 +47,7 @@ Header          Spec     Description                         Status
 <stdarg.h>      C11 7.16 Variable arguments.                 Implemented. [1]_
 <stdatomic.h>   C11 7.17 Atomics.                            WIP
 <stdbool.h>     C11 7.18 Boolean type and values.            Implemented.
-<stddef.h>      C11 7.19 Common definitions.                 WIP
+<stddef.h>      C11 7.19 Common definitions.                 Implemented.
 <stdint.h>      C11 7.20 Integer types.                      WIP
 <stdio.h>       C11 7.21 Input/output.                       WIP
 <stdlib.h>      C11 7.22 General utilities.                  WIP

@@ -22,8 +22,27 @@ typedef signed long ptrdiff_t;
 typedef unsigned long size_t;
 
 /**
+ * An object type whose alignment is as great as is supported by the
+ * implementation in all contexts.
+ */
+typedef struct { long long __ll; long double __ld; } max_align_t;
+
+/**
+ * An integer type whose range of values can represent distinct codes for
+ * all members of the largest extended character set specified among the
+ * supported locales.
+ */
+typedef int wchar_t;
+
+/**
  * Null pointer constant.
  */
 #define NULL ((void*)0)
+
+/**
+ * The offset in bytes to the structure member from the beginning of its
+ * structure.
+ */
+#define offsetof(type, member) __builtin_offsetof(type, member)
 
 #endif /* _STDDEF_H */
