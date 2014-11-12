@@ -39,7 +39,7 @@ Header          Spec     Description                         Status
 <inttypes.h>    C11 7.8  Format conversion of integer types. WIP
 <iso646.h>      C11 7.9  Alternative spellings.              Implemented.
 <limits.h>      C11 7.10 Sizes of integer types.             Implemented.
-<locale.h>      C11 7.11 Localization.                       WIP
+<locale.h>      C11 7.11 Localization.                       Stubbed.
 <math.h>        C11 7.12 Mathematics.                        
 <setjmp.h>      C11 7.13 Nonlocal jumps.                     
 <signal.h>      C11 7.14 Signal handling.                    WIP

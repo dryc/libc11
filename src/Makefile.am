@@ -28,6 +28,7 @@ endif
 
 if !DISABLE_LOCALE
   SUBDIRS += locale
+  libc_la_LIBADD += $(srcdir)/locale/libclocale.la
 endif
 
 if !DISABLE_MATH
