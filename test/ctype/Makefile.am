@@ -5,20 +5,20 @@ AM_LDFLAGS  += $(TEST_LDFLAGS)
 LDADD = $(top_srcdir)/src/libc.la
 
 check_PROGRAMS = \
-  check_isalnum  \
-  check_isalpha  \
-  check_isascii  \
-  check_isblank  \
-  check_iscntrl  \
-  check_isdigit  \
-  check_isgraph  \
-  check_islower  \
-  check_isprint  \
-  check_ispunct  \
-  check_isspace  \
-  check_isupper  \
-  check_isxdigit \
-  check_tolower  \
-  check_toupper
+  check-isalnum  \
+  check-isalpha  \
+  check-isascii  \
+  check-isblank  \
+  check-iscntrl  \
+  check-isdigit  \
+  check-isgraph  \
+  check-islower  \
+  check-isprint  \
+  check-ispunct  \
+  check-isspace  \
+  check-isupper  \
+  check-isxdigit \
+  check-tolower  \
+  check-toupper
 
 TESTS = $(check_PROGRAMS)

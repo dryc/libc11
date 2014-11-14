@@ -5,9 +5,9 @@ AM_LDFLAGS  += $(TEST_LDFLAGS)
 LDADD = $(top_srcdir)/src/libc.la
 
 check_PROGRAMS =  \
-  check_snprintf  \
-  check_sprintf   \
-  check_vsnprintf \
-  check_vsprintf
+  check-snprintf  \
+  check-sprintf   \
+  check-vsnprintf \
+  check-vsprintf
 
 TESTS = $(check_PROGRAMS)

@@ -1,4 +1,4 @@
-check_snprintf
-check_sprintf
-check_vsnprintf
-check_vsprintf
+check-snprintf
+check-sprintf
+check-vsnprintf
+check-vsprintf
