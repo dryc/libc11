@@ -2,9 +2,9 @@ Near-Term Priorities
 --------------------
 
 - Make the classic "Hello, world!" example run on all supported platforms.
-  - sys/**/crt0.S
-  - sys/**/__sys_exit.S
-  - sys/**/__sys_write.S
+  + sys/**/crt0.S
+  + sys/**/__sys_exit.S
+  ~ sys/**/__sys_write.S
   + <stdlib.h>: EXIT_SUCCESS
   ~ <stdio.h>: puts()
 - Implement assert() so that the test harness can be made useful.

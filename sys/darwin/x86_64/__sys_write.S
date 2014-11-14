@@ -1,8 +1,15 @@
 /* This is free and unencumbered software released into the public domain. */
 
+#define SYSCALL_WRITE 0x2000004
+
 .text
 
 .global ___sys_write
 ___sys_write:
-  // TODO
+  /* %rdi = fd     */
+  /* %rsi = buf    */
+  /* %rdx = len    */
+  movq $SYSCALL_WRITE, %rax
+  syscall
   ret
+  /* %rax = result */
