@@ -111,6 +111,7 @@ though most of them are licensed more restrictively than this implementation:
 * musl_ (MIT)
 * Newlib_ (LGPL/BSD/etc)
 * olibc_ (BSD)
+* OSv_ (MIT/BSD)
 * uClibc_ (LGPL)
 
 .. _PDCLib:   http://pdclib.e43.eu/
@@ -123,6 +124,7 @@ though most of them are licensed more restrictively than this implementation:
 .. _musl:     http://en.wikipedia.org/wiki/Musl
 .. _Newlib:   http://en.wikipedia.org/wiki/Newlib
 .. _olibc:    http://olibc.github.io/
+.. _OSv:      https://github.com/cloudius-systems/osv/tree/master/libc
 .. _uClibc:   http://en.wikipedia.org/wiki/UClibc
 
 Author
@@ -140,7 +142,7 @@ maintenance and further development, please consider making a $5 donation
 to the author(s) via Gratipay_ or Bitcoin_.
 
 .. _Gratipay: https://gratipay.com/bendiken/
-.. _Bitcoin:  bitcoin:1G9DcLHQTYMXWMJVWgnPaBJ4vuiYYkV4d7?label=libc11.org&message=Donation
+.. _Bitcoin:  https://blockchain.info/address/1G9DcLHQTYMXWMJVWgnPaBJ4vuiYYkV4d7
 
 License
 =======
