@@ -3,11 +3,11 @@ CFLAGS   =
 LDFLAGS  = -nostdlib -L$(DESTDIR)/lib -static
 LDADD    = $(DESTDIR)/lib/libc.a
 
-PROGRAMS = hello
+PROGRAMS = exit42
 
 all: $(PROGRAMS)
 
-hello: $(DESTDIR)/lib/libc11/crt0.o hello.o
+exit42: $(DESTDIR)/lib/libc11/crt0.o exit42.o
 	$(CC) $(LDFLAGS) -o $@ $^ $(LDADD)
 
 %.o: %.c
