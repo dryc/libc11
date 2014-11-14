@@ -1,3 +1,20 @@
+Near-Term Priorities
+--------------------
+
+- Make the classic "Hello, world!" example run on all supported platforms.
+  - sys/**/crt0.S
+  - sys/**/__sys_exit.S
+  - sys/**/__sys_write.S
+  - <stdlib.h>: EXIT_SUCCESS
+  - <stdio.h>: puts()
+- Implement assert() so that the test harness can be made useful.
+  - <assert.h>: assert()
+
+Other Priorities
+----------------
+
+- malloc(), calloc(), realloc(), free() for all supported platforms.
+
 Nice to Have
 ------------
 
@@ -11,6 +28,14 @@ POSIX.1-2008
 - open_memstream()
   http://pubs.opengroup.org/onlinepubs/9699919799/functions/open_memstream.html
 
+POSIX.1
+-------
+
+- brk(), sbrk() [removed in POSIX.1-2001]
+  http://pubs.opengroup.org/onlinepubs/7908799/xsh/brk.html
+  http://man7.org/linux/man-pages/man2/brk.2.html
+  http://groups.google.com/forum/#!topic/comp.unix.programmer/TUSc7U0UfxY
+
 GNU Extensions
 --------------
 
@@ -18,9 +43,19 @@ GNU Extensions
   http://www.gnu.org/software/libc/manual/html_node/Streams-and-Cookies.html
   http://www.gnu.org/software/gnulib/manual/html_node/fopencookie.html
   http://man7.org/linux/man-pages/man3/fopencookie.3.html
+- secure_getenv()
+  http://www.gnu.org/software/libc/manual/html_node/Environment-Access.html
+  http://man7.org/linux/man-pages/man3/getenv.3.html
+  http://sourceware.org/glibc/wiki/Tips_and_Tricks/secure_getenv
+
+Linux Extensions
+----------------
 
 BSD Extensions
 --------------
 
+- strlcpy(), strlcat()
+  http://www.courtesan.com/todd/papers/strlcpy.html
 - reallocarray()
   http://lteo.net/blog/2014/10/28/reallocarray-in-openbsd-integer-overflow-detection-for-free/
+- http://en.wikipedia.org/wiki/C_standard_library#BSD_libc
