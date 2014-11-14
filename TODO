@@ -5,8 +5,8 @@ Near-Term Priorities
   - sys/**/crt0.S
   - sys/**/__sys_exit.S
   - sys/**/__sys_write.S
-  - <stdlib.h>: EXIT_SUCCESS
-  - <stdio.h>: puts()
+  + <stdlib.h>: EXIT_SUCCESS
+  ~ <stdio.h>: puts()
 - Implement assert() so that the test harness can be made useful.
   - <assert.h>: assert()
 

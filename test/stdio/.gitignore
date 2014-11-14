@@ -1,3 +1,5 @@
+check-macros
+check-puts
 check-snprintf
 check-sprintf
 check-vsnprintf
