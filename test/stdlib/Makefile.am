@@ -11,6 +11,7 @@ check_PROGRAMS =   \
   check-exit       \
   check-labs       \
   check-llabs      \
+  check-macros     \
   check-quick_exit
 
 TESTS = $(check_PROGRAMS)

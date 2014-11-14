@@ -4,4 +4,5 @@ check-abs
 check-exit
 check-labs
 check-llabs
+check-macros
 check-quick_exit
