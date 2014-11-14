@@ -12,7 +12,7 @@ Header          Spec     Description                         Status
 <ctype.h>       C11 7.4  Character handling.                 Implemented.
 <errno.h>       C11 7.5  Errors.                             WIP
 <fenv.h>        C11 7.6  Floating-point environment.         
-<float.h>       C11 7.7  Characteristics of floating types.  
+<float.h>       C11 7.7  Characteristics of floating types.  Implemented.
 <inttypes.h>    C11 7.8  Format conversion of integer types. WIP
 <iso646.h>      C11 7.9  Alternative spellings.              Implemented.
 <limits.h>      C11 7.10 Sizes of integer types.             Implemented.

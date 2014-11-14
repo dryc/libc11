@@ -75,6 +75,13 @@ AS_IF([test "x$enable_fenv" == "xno"], [
   AC_DEFINE([DISABLE_FENV], 1, [Define to omit the <fenv.h> interface.])
 ])
 AM_CONDITIONAL([DISABLE_FENV], [test "x$enable_fenv" == "xno"])
+# --enable-float/--disable-float
+AC_ARG_ENABLE([float],
+  [AS_HELP_STRING([--disable-float], [omit support for the <float.h> interface])])
+AS_IF([test "x$enable_float" == "xno"], [
+  AC_DEFINE([DISABLE_FLOAT], 1, [Define to omit the <float.h> interface.])
+])
+AM_CONDITIONAL([DISABLE_FLOAT], [test "x$enable_float" == "xno"])
 # --enable-inttypes/--disable-inttypes
 AC_ARG_ENABLE([inttypes],
   [AS_HELP_STRING([--disable-inttypes], [omit support for the <inttypes.h> interface])])
@@ -231,6 +238,7 @@ AC_CONFIG_FILES([
   test/ctype/Makefile
   test/errno/Makefile
   test/fenv/Makefile
+  test/float/Makefile
   test/inttypes/Makefile
   test/locale/Makefile
   test/math/Makefile

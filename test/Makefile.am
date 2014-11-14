@@ -16,6 +16,10 @@ if !DISABLE_FENV
   SUBDIRS += fenv
 endif
 
+if !DISABLE_FLOAT
+  SUBDIRS += float
+endif
+
 if !DISABLE_INTTYPES
   SUBDIRS += inttypes
 endif

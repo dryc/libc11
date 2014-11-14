@@ -8,6 +8,10 @@ endif
 
 include_HEADERS += errno.h
 
+if !DISABLE_FLOAT
+  include_HEADERS += float.h
+endif
+
 if !DISABLE_INTTYPES
   include_HEADERS += inttypes.h
 endif
