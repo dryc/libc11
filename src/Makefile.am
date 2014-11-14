@@ -17,6 +17,7 @@ if !DISABLE_CTYPE
 endif
 
 SUBDIRS += errno
+libc_la_LIBADD += $(srcdir)/errno/libcerrno.la
 
 if !DISABLE_FENV
   SUBDIRS += fenv

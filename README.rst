@@ -33,7 +33,7 @@ Header          Spec     Description                         Status
 <assert.h>      C11 7.2  Diagnostics.                        WIP
 <complex.h>     C11 7.3  Complex arithmetic.                 
 <ctype.h>       C11 7.4  Character handling.                 Implemented.
-<errno.h>       C11 7.5  Errors.                             WIP
+<errno.h>       C11 7.5  Errors.                             Implemented. [1]_
 <fenv.h>        C11 7.6  Floating-point environment.         
 <float.h>       C11 7.7  Characteristics of floating types.  Implemented.
 <inttypes.h>    C11 7.8  Format conversion of integer types. WIP
@@ -44,7 +44,7 @@ Header          Spec     Description                         Status
 <setjmp.h>      C11 7.13 Nonlocal jumps.                     
 <signal.h>      C11 7.14 Signal handling.                    WIP
 <stdalign.h>    C11 7.15 Alignment.                          Implemented.
-<stdarg.h>      C11 7.16 Variable arguments.                 Implemented. [1]_
+<stdarg.h>      C11 7.16 Variable arguments.                 Implemented. [2]_
 <stdatomic.h>   C11 7.17 Atomics.                            WIP
 <stdbool.h>     C11 7.18 Boolean type and values.            Implemented.
 <stddef.h>      C11 7.19 Common definitions.                 Implemented.
@@ -57,15 +57,17 @@ Header          Spec     Description                         Status
 <threads.h>     C11 7.26 Threads.                            
 <time.h>        C11 7.27 Date and time.                      
 <uchar.h>       C11 7.28 Unicode utilities.                  
-<wchar.h>       C11 7.29 Wide character utilities.           Omitted. [2]_
-<wctype.h>      C11 7.30 Wide character utilities.           Omitted. [2]_
+<wchar.h>       C11 7.29 Wide character utilities.           Omitted. [3]_
+<wctype.h>      C11 7.30 Wide character utilities.           Omitted. [3]_
 =============== ======== =================================== ===================
 
 .. rubric:: Footnotes
 
-.. [1] Currently implemented only for the Clang and GCC compilers.
+.. [1] Thread-local storage not supported as yet.
 
-.. [2] Purposely omitted from the library.
+.. [2] Currently implemented only for the Clang and GCC compilers.
+
+.. [3] Purposely omitted from the library.
 
 Installation
 ============
