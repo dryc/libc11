@@ -9,6 +9,7 @@ Near-Term Priorities
   ~ <stdio.h>: puts()
 - Implement assert() so that the test harness can be made useful.
   - <assert.h>: assert()
+- Detect support for __attribute__((weak)) and use it in sys/none/.
 
 Other Priorities
 ----------------

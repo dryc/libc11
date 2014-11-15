@@ -18,6 +18,9 @@ standard library.
 Features
 ========
 
+* Supports the Linux, FreeBSD, OpenBSD, NetBSD, and Mac OS X platforms.
+* Targets the x86-64 architecture and ABI, with x86 and ARM upcoming.
+* Clean and modular design, most features can be omitted when building.
 * No build prerequisites beyond the Autotools toolchain and a C99 compiler.
 * 100% free and unencumbered `public domain <http://unlicense.org/>`_ software,
   usable in any context and for any purpose.
@@ -72,16 +75,64 @@ Header          Spec     Description                         Status
 Installation
 ============
 
-Installation on Unix
---------------------
+Installing on Unix
+------------------
 
-::
+Configuring, building, and installing the library (by default, into
+``/usr/local``) all are performed with the standard incantations::
 
-   $ ./autogen.sh
+   $ ./autogen.sh       # for development checkout only
    $ ./configure
    $ make
    $ sudo make install
-   $ sudo ldconfig                      # on Linux
+
+Configuration
+=============
+
+Configuring a Static Build
+--------------------------
+
+By default on most platforms that support both, the library will be built
+both as a static library (``libc.a``) as well as a dynamic shared library
+(``libc.so`` on most Unix platforms, though ``libc.dylib`` on Darwin).
+
+If you don't require a shared library, configure the build as follows::
+
+   $ ./configure --disable-shared
+
+Configuring a Minimal Build
+---------------------------
+
+The library is thoroughly modular. Specific header files and their
+underlying function implementations can be omitted using the familiar
+``./configure --disable-FEATURE`` facility provided by Autoconf.
+
+For example, if you don't require any numerics support, you might as well
+disable the floating-point routines and the mathematics library, as follows::
+
+   $ ./configure --disable-complex --disable-fenv --disable-float --disable-math
+
+To review the list of features, see the output of ``./configure --help``.
+
+Configuring for Bare Metal
+--------------------------
+
+The special `none` target operating system builds the library with a
+system-call interface where all system operations are simply no-op stubs.
+See the ``sys/syscall.h`` header file and the ``sys/none/`` directory for
+the syscall stubs that a bare-metal user of libc11 must implement.
+
+The following example shows how one might configure a cross-compilation
+build on an x86-64 Linux system, targeting an x86-64 bare-metal system::
+
+   $ ./configure --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-none
+
+Provided your linker supports `weak symbols`_, you can configure the libc11
+build as per the aforementioned example, and then when linking libc11 into
+your kernel provide your own syscall implementations as strong symbols that
+override the default no-op stubs from ``sys/none/``.
+
+.. _weak symbols: http://en.wikipedia.org/wiki/Weak_symbol
 
 Elsewhere
 =========
