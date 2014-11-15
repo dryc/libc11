@@ -177,7 +177,7 @@ AS_CASE([$ax_cv_c_compiler_vendor],
   [AC_MSG_WARN([unsupported compiler: specify preprocessor/linker flags manually])])
 AM_CPPFLAGS="$AM_CPPFLAGS -I\$(top_srcdir)/src/include"
 TEST_CPPFLAGS="$AM_CPPFLAGS"
-AM_CPPFLAGS="$AM_CPPFLAGS -I\$(top_srcdir)/src"
+AM_CPPFLAGS="$AM_CPPFLAGS -I\$(top_srcdir)/src -I\$(top_srcdir)/sys"
 AM_CFLAGS="$AM_CFLAGS"
 TEST_CFLAGS="$AM_CFLAGS"
 AM_LDFLAGS="$AM_LDFLAGS"

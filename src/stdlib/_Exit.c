@@ -4,9 +4,9 @@
 #include <config.h>
 #endif
 
-#include <stdlib.h>
+#include <stdlib.h>  /* for _Exit() */
 
-_Noreturn void __sys_exit(int status);
+#include "syscall.h" /* for __sys_*() */
 
 /**
  * @date   2013-05-25

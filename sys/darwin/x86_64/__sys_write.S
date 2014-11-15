@@ -7,8 +7,8 @@
 .global ___sys_write
 ___sys_write:
   /* %rdi = fd     */
-  /* %rsi = buf    */
-  /* %rdx = len    */
+  /* %rsi = buffer */
+  /* %rdx = count  */
   movq $SYSCALL_WRITE, %rax
   syscall
   ret
