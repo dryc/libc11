@@ -4,7 +4,7 @@
 
 .text
 
-.global ___sys_write
+.globl ___sys_write
 ___sys_write:
   /* %rdi = fd     */
   /* %rsi = buffer */

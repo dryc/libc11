@@ -2,9 +2,7 @@
 
 .text
 
-.extern __Exit
-
-.global start
+.globl start
 start:
   call _main
 
