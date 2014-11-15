@@ -1,2 +1,2 @@
 SUBDIRS = $(HOST_OS)
-DIST_SUBDIRS = bsd darwin linux
+DIST_SUBDIRS = bsd darwin linux none

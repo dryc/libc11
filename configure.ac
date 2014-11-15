@@ -162,6 +162,7 @@ AS_CASE([$host_cpu],
 AS_CASE([$host_os],
   [darwin*],  [host_os="darwin"],
   [linux*],   [host_os="linux"],
+  [none],     [host_os="none"],
   [openbsd*], [host_os="bsd"],
   [AC_MSG_ERROR([unsupported OS platform: $host_os])])
 AX_COMPILER_VENDOR
@@ -231,6 +232,7 @@ AC_CONFIG_FILES([
   sys/darwin/x86_64/Makefile
   sys/linux/Makefile
   sys/linux/x86_64/Makefile
+  sys/none/Makefile
   test/Makefile
   test/include/Makefile
   test/assert/Makefile
