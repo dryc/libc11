@@ -79,9 +79,9 @@ Installing on Unix
 ------------------
 
 Configuring, building, and installing the library (by default, into
-``/usr/local``) all are performed with the standard incantations::
+``/usr/local``) are all performed with the standard incantations::
 
-   $ ./autogen.sh       # for development checkout only
+   $ ./autogen.sh       # for a development checkout only
    $ ./configure
    $ make
    $ sudo make install
@@ -94,9 +94,9 @@ Configuring a Static Build
 
 By default on most platforms that support both, the library will be built
 both as a static library (``libc.a``) as well as a dynamic shared library
-(``libc.so`` on most Unix platforms, though ``libc.dylib`` on Darwin).
+(``libc.so`` on most Unix systems, though ``libc.dylib`` on Darwin).
 
-If you don't require a shared library, configure the build as follows::
+If you don't require a shared library, configure the build accordingly::
 
    $ ./configure --disable-shared
 
@@ -154,18 +154,22 @@ Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
 Many other open-source implementations of the C standard library exist,
 though most of them are licensed more restrictively than this implementation:
 
-* PDCLib_ (public domain)
-* PDPCLIB_ (public domain)
-* Bionic_ (BSD)
-* dietlibc_ (GPL)
-* EGLIBC_ (LGPL)
-* glibc_ (LGPL)
-* klibc_ (GPL/BSD)
-* musl_ (MIT)
-* Newlib_ (LGPL/BSD/etc)
-* olibc_ (BSD)
-* OSv_ (MIT/BSD)
-* uClibc_ (LGPL)
+========= ============ ======== === ====== === ===== ==== ====== ===============
+Project   License      Status   x86 x86-64 ARM ARM64 MIPS MIPS64 Miscellaneous
+========= ============ ======== === ====== === ===== ==== ====== ===============
+PDCLib_   PD/CC0       Active   Yes Yes    ?   ?     ?    ?      incomplete
+PDPCLIB_  PD           Active?  Yes No     No  No    No   No     S/3x0
+Bionic_   BSD          Active   Yes Yes    Yes Yes   Yes  Yes    for Android
+dietlibc_ GPL          Active?  Yes Yes    Yes No    Yes  Yes    many targets
+EGLIBC_   LGPL         Inactive Yes Yes    Yes Yes   Yes  Yes    discontinued
+glibc_    LGPL         Active   Yes Yes    Yes Yes   Yes  Yes    many targets
+klibc_    GPL/BSD      Active   Yes Yes    Yes No    Yes  Yes    many targets
+musl_     MIT          Active   Yes Yes    Yes No    Yes  No     PPC, MicroBlaze
+Newlib_   LGPL/BSD/etc Active   Yes Yes    Yes Yes   Yes  Yes    many targets
+olibc_    BSD          Active?  Yes Yes    Yes Yes   Yes  Yes    fork of Bionic
+OSv_      MIT/BSD      Active   No  Yes    No  Yes   No   No     written in C++
+uClibc_   LGPL         Active   Yes Yes    Yes No    Yes  Yes    many targets
+========= ============ ======== === ====== === ===== ==== ====== ===============
 
 .. _PDCLib:   http://pdclib.e43.eu/
 .. _PDPCLIB:  http://pdos.sourceforge.net/
