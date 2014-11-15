@@ -137,13 +137,12 @@ override the default no-op stubs from ``sys/none/``.
 Elsewhere
 =========
 
-Find this project at: GitHub_, Bitbucket_, Ohloh_, Freecode_, SourceForge_,
+Find this project at: GitHub_, Bitbucket_, `Open Hub`_, SourceForge_,
 `Travis CI`_, `Coverity Scan`_, Twitter_, Tumblr_, and COD5_.
 
 .. _GitHub:        http://github.com/dryproject/libc11
 .. _Bitbucket:     http://bitbucket.org/dryproject/libc11
-.. _Ohloh:         http://www.ohloh.net/p/libc11
-.. _Freecode:      http://freecode.com/projects/libc11
+.. _Open Hub:      http://www.openhub.net/p/libc11
 .. _SourceForge:   http://sourceforge.net/projects/libc11/
 .. _Travis CI:     http://travis-ci.org/dryproject/libc11
 .. _Twitter:       http://twitter.com/libc11
