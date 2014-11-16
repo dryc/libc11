@@ -157,10 +157,12 @@ dnl Check for structures:
 dnl Check for compiler characteristics:
 AC_CANONICAL_HOST
 AS_CASE([$host_cpu],
+  [amd64],  [host_cpu="x86_64"],
   [x86_64], [],
   [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
 AS_CASE([$host_os],
   [darwin*],  [host_os="darwin"],
+  [freebsd*], [host_os="bsd"],
   [linux*],   [host_os="linux"],
   [none],     [host_os="none"],
   [openbsd*], [host_os="bsd"],
