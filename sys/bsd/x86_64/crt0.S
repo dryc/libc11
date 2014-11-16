@@ -13,6 +13,7 @@ _start:
 
   hlt
 
+#ifdef HOST_OPENBSD
 .section ".note.openbsd.ident", "a"
   .p2align 2
   .long 0x8
@@ -21,3 +22,4 @@ _start:
   .ascii "OpenBSD\0"
   .long 0x0
   .p2align 2
+#endif

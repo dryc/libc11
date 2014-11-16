@@ -161,11 +161,11 @@ AS_CASE([$host_cpu],
   [x86_64], [],
   [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
 AS_CASE([$host_os],
-  [darwin*],  [host_os="darwin"],
-  [freebsd*], [host_os="bsd"],
-  [linux*],   [host_os="linux"],
-  [none],     [host_os="none"],
-  [openbsd*], [host_os="bsd"],
+  [darwin*],  [host_os="darwin" AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_DARWIN"],
+  [freebsd*], [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_FREEBSD"],
+  [linux*],   [host_os="linux"  AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_LINUX"],
+  [none],     [host_os="none"   AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_NONE"],
+  [openbsd*], [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_OPENBSD"],
   [AC_MSG_ERROR([unsupported OS platform: $host_os])])
 AX_COMPILER_VENDOR
 AS_CASE([$ax_cv_c_compiler_vendor],
