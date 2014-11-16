@@ -18,7 +18,7 @@ standard library.
 Features
 ========
 
-* Supports the Linux, FreeBSD, OpenBSD, NetBSD, and Mac OS X platforms.
+* Supports the Linux, FreeBSD, OpenBSD, NetBSD, Solaris, and Mac OS X platforms.
 * Targets the x86-64 architecture and ABI, with x86 and ARM upcoming.
 * Clean and modular design, most features can be omitted when building.
 * No build prerequisites beyond the Autotools toolchain and a C99 compiler.

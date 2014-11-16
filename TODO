@@ -16,6 +16,12 @@ Other Priorities
 
 - malloc(), calloc(), realloc(), free() for all supported platforms.
 
+Platform Support
+----------------
+
+- Solaris 11.2 on x86-64 currently requires: ./configure CC='gcc -std=c99 -m64'
+- Autodetect the compiler's C11 or C99 support, setting -std=c11 or -std=c99.
+
 Nice to Have
 ------------
 

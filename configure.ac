@@ -166,6 +166,7 @@ AS_CASE([$host_os],
   [linux*],   [host_os="linux"  AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_LINUX"],
   [none],     [host_os="none"   AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_NONE"],
   [openbsd*], [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_OPENBSD"],
+  [solaris*], [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_SOLARIS"],
   [AC_MSG_ERROR([unsupported OS platform: $host_os])])
 AX_COMPILER_VENDOR
 AS_CASE([$ax_cv_c_compiler_vendor],
