@@ -13,13 +13,27 @@ _start:
 
   hlt
 
+#ifdef HOST_NETBSD
+/* See: http://www.netbsd.org/docs/kernel/elf-notes.html */
+.section ".note.netbsd.ident", "a"
+  .p2align 2
+  .long 7
+  .long 4
+  .long 1
+  .asciz "NetBSD"
+  .p2align 2
+  .long 200000000 /* __NetBSD_Version__ in /usr/include/sys/param.h */
+  .p2align 2
+#endif
+
 #ifdef HOST_OPENBSD
 .section ".note.openbsd.ident", "a"
   .p2align 2
-  .long 0x8
-  .long 0x4
-  .long 0x1
-  .ascii "OpenBSD\0"
-  .long 0x0
+  .long 8
+  .long 4
+  .long 1
+  .asciz "OpenBSD"
+  .p2align 2
+  .long 0
   .p2align 2
 #endif
