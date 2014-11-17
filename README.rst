@@ -21,7 +21,7 @@ Features
 * Supports the Linux, FreeBSD, OpenBSD, NetBSD, Solaris, and Mac OS X platforms.
 * Targets the x86-64 architecture and ABI, with x86 and ARM upcoming.
 * Clean and modular design, most features can be omitted when building.
-* No build prerequisites beyond the Autotools toolchain and a C99 compiler.
+* No build prerequisites beyond a GNU-compatible toolchain and a C99 compiler.
 * 100% free and unencumbered `public domain <http://unlicense.org/>`_ software,
   usable in any context and for any purpose.
 
@@ -117,7 +117,7 @@ To review the list of features, see the output of ``./configure --help``.
 Configuring for Bare Metal
 --------------------------
 
-The special `none` target operating system builds the library with a
+The special *none* target operating system builds the library with a
 system-call interface where all system operations are simply no-op stubs.
 See the ``sys/syscall.h`` header file and the ``sys/none/`` directory for
 the syscall stubs that a bare-metal user of libc11 must implement.
