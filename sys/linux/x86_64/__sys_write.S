@@ -6,10 +6,10 @@
 
 .global __sys_write
 __sys_write:
-  /* %rdi = fd     */
-  /* %rsi = buffer */
-  /* %rdx = count  */
-  movq $SYS_write, %rax
-  syscall
-  ret
-  /* %rax = result */
+    /* %rdi = fd     */
+    /* %rsi = buffer */
+    /* %rdx = count  */
+    movq $SYS_write, %rax
+    syscall
+    ret
+    /* %rax = result */

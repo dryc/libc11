@@ -6,9 +6,9 @@
 
 .global _start
 _start:
-  call main
+    call main
 
-  movq %rax, %rdi
-  call _Exit
+    movq %rax, %rdi
+    call _Exit
 
-  hlt
+    hlt

@@ -6,7 +6,7 @@
 
 .globl ___sys_exit
 ___sys_exit:
-  /* %rdi = status */
-  movq $SYSCALL_EXIT, %rax
-  syscall
-  hlt
+    /* %rdi = status */
+    movq $SYSCALL_EXIT, %rax
+    syscall
+    hlt

@@ -4,9 +4,9 @@
 
 .globl start
 start:
-  call _main
+    call _main
 
-  movq %rax, %rdi
-  call __Exit
+    movq %rax, %rdi
+    call __Exit
 
-  hlt
+    hlt

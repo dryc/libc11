@@ -6,10 +6,10 @@
 
 .globl ___sys_write
 ___sys_write:
-  /* %rdi = fd     */
-  /* %rsi = buffer */
-  /* %rdx = count  */
-  movq $SYSCALL_WRITE, %rax
-  syscall
-  ret
-  /* %rax = result */
+    /* %rdi = fd     */
+    /* %rsi = buffer */
+    /* %rdx = count  */
+    movq $SYSCALL_WRITE, %rax
+    syscall
+    ret
+    /* %rax = result */

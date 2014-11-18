@@ -6,7 +6,7 @@
 
 .global __sys_exit
 __sys_exit:
-  /* %rdi = status */
-  movq $SYS_exit, %rax
-  syscall
-  hlt
+    /* %rdi = status */
+    movq $SYS_exit, %rax
+    syscall
+    hlt
