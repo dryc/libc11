@@ -158,6 +158,7 @@ dnl Check for compiler characteristics:
 AC_CANONICAL_HOST
 AS_CASE([$host_cpu],
   [amd64],  [host_cpu="x86_64"],
+  [armv7l], [host_cpu="arm" AM_CFLAGS="$AM_CFLAGS -marm -march=armv6"],
   [x86_64], [],
   [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
 AS_CASE([$host_os],
@@ -236,6 +237,7 @@ AC_CONFIG_FILES([
   sys/darwin/Makefile
   sys/darwin/x86_64/Makefile
   sys/linux/Makefile
+  sys/linux/arm/Makefile
   sys/linux/x86_64/Makefile
   sys/none/Makefile
   test/Makefile

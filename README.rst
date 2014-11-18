@@ -19,7 +19,7 @@ Features
 ========
 
 * Supports the Linux, FreeBSD, OpenBSD, NetBSD, Solaris, and Mac OS X platforms.
-* Targets the x86-64 architecture and ABI, with x86 and ARM upcoming.
+* Currently targets the x86-64 (AMD64) System V ABI and the ARM EABI.
 * Clean and modular design, most features can be omitted when building.
 * No build prerequisites beyond a GNU-compatible toolchain and a C99 compiler.
 * 100% free and unencumbered `public domain <http://unlicense.org/>`_ software,
