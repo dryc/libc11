@@ -158,6 +158,7 @@ dnl Check for compiler characteristics:
 AC_CANONICAL_HOST
 AS_CASE([$host_cpu],
   [amd64],  [host_cpu="x86_64"],
+  [armv6l], [host_cpu="arm" AM_CFLAGS="$AM_CFLAGS -marm -march=armv6"],
   [armv7l], [host_cpu="arm" AM_CFLAGS="$AM_CFLAGS -marm -march=armv6"],
   [x86_64], [],
   [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
