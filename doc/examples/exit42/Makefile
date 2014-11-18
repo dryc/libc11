@@ -1,5 +1,5 @@
 CPPFLAGS = -nostdinc -I$(DESTDIR)/include
-CFLAGS   =
+CFLAGS   = -std=c99
 LDFLAGS  = -nostdlib -L$(DESTDIR)/lib -static
 LDADD    = $(DESTDIR)/lib/libc.a
 
