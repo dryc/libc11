@@ -19,7 +19,7 @@ Features
 ========
 
 * Supports the Linux, FreeBSD, OpenBSD, NetBSD, Solaris, and Mac OS X platforms.
-* Currently targets the x86-64 (AMD64) System V ABI and the ARM EABI.
+* Currently targets the System V ABI for x86 and x86-64, and the EABI for ARM.
 * Clean and modular design, most features can be omitted when building.
 * No build prerequisites beyond a GNU-compatible toolchain and a C99 compiler.
 * 100% free and unencumbered `public domain <http://unlicense.org/>`_ software,
@@ -80,6 +80,7 @@ Platform        Architecture    Binary Interface        Compilers
 =============== =============== ======================= ========================
 Bare metal      any             N/A                     Clang, GCC
 Linux           ARMv6+ [4]_     ARM EABI                Clang, GCC
+Linux           x86             i386 SysV ABI           Clang, GCC
 Linux           x86-64          AMD64 SysV ABI          Clang, GCC
 FreeBSD         x86-64          AMD64 SysV ABI          Clang, GCC
 OpenBSD         x86-64          AMD64 SysV ABI          Clang, GCC

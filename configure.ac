@@ -160,7 +160,9 @@ AS_CASE([$host_cpu],
   [amd64],  [host_cpu="x86_64"],
   [armv6l], [host_cpu="arm" AM_CFLAGS="$AM_CFLAGS -marm -march=armv6"],
   [armv7l], [host_cpu="arm" AM_CFLAGS="$AM_CFLAGS -marm -march=armv6"],
-  [x86_64], [],
+  [i?86],   [host_cpu="x86"],
+  [x86],    [host_cpu="x86"],
+  [x86_64], [host_cpu="x86_64"],
   [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
 AS_CASE([$host_os],
   [darwin*],  [host_os="darwin" AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_DARWIN"],
@@ -239,6 +241,7 @@ AC_CONFIG_FILES([
   sys/darwin/x86_64/Makefile
   sys/linux/Makefile
   sys/linux/arm/Makefile
+  sys/linux/x86/Makefile
   sys/linux/x86_64/Makefile
   sys/none/Makefile
   test/Makefile
