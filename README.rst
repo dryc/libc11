@@ -72,6 +72,26 @@ Header          Spec     Description                         Status
 
 .. [3] Purposely omitted from the library.
 
+Platform Support
+----------------
+
+=============== =============== ======================= ========================
+Platform        Architecture    Binary Interface        Compilers
+=============== =============== ======================= ========================
+Bare metal      any             N/A                     Clang, GCC
+Linux           ARMv6+ [4]_     ARM EABI                Clang, GCC
+Linux           x86-64          AMD64 SysV ABI          Clang, GCC
+FreeBSD         x86-64          AMD64 SysV ABI          Clang, GCC
+OpenBSD         x86-64          AMD64 SysV ABI          Clang, GCC
+NetBSD          x86-64          AMD64 SysV ABI          Clang, GCC
+Solaris         x86-64          AMD64 SysV ABI          Clang, GCC
+Mac OS X        x86-64          AMD64 SysV ABI          Clang, GCC
+=============== =============== ======================= ========================
+
+.. rubric:: Footnotes
+
+.. [4] The ``armhf`` architecture providing a hardware floating-point unit (FPU).
+
 Installation
 ============
 

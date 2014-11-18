@@ -34,7 +34,7 @@ NetBSD 6.1.5            | GCC 4.5.3                     | x86-64
 OpenBSD 5.6             | GCC 4.2.1                     | x86-64
 OpenBSD 5.3             | GCC 4.2.1                     | x86-64
 Solaris 11.2            | GCC 4.8.2                     | x86-64
-Ubuntu 14.04            | Clang 3.5                     | x86-64
+Ubuntu 14.04            | Clang 3.5                     | x86-64, ARMv6+ (armhf)
                         | GCC 4.9.2                     | x86-64
 Ubuntu 12.10            | Clang 3.2 PPA                 | x86-64
                         | GCC 4.7.2                     | x86-64
