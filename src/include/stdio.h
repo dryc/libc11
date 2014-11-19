@@ -24,6 +24,29 @@ extern "C" {
 #endif
 
 /**
+ * C11 7.21.1.2
+ */
+typedef struct __sys_FILE FILE;
+
+/**
+ * C11 7.21.1.3
+ */
+#define stdin (stdin)
+extern FILE* const stdin;
+
+/**
+ * C11 7.21.1.3
+ */
+#define stdout (stdout)
+extern FILE* const stdout;
+
+/**
+ * C11 7.21.1.3
+ */
+#define stderr (stderr)
+extern FILE* const stderr;
+
+/**
  * C11 7.21.7.9
  */
 int puts(const char* str);
