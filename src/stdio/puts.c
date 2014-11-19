@@ -4,11 +4,7 @@
 #include <config.h>
 #endif
 
-#include <errno.h>   /* for errno */
-#include <stdio.h>   /* for puts() */
-#include <string.h>  /* for strlen() */
-
-#include "syscall.h" /* for __sys_*() */
+#include <stdio.h> /* for stdout, fputc(), fputs(), puts() */
 
 /**
  * @date   2014-11-14
@@ -16,19 +12,12 @@
  * @see    http://libc11.org/stdio/puts.html
  */
 int
-puts(const char* str) {
-  // TODO: reimplement this to be based on fputs() and fputc().
-  long rc;
-
-  rc = __sys_write(1 /*stdout*/, str, strlen(str));
-  if (rc < 0) {
-    errno = -rc;
+puts(const char* const str) {
+  if (fputs(str, stdout) == EOF) {
     return EOF;
   }
 
-  rc = __sys_write(1 /*stdout*/, "\n", 1);
-  if (rc < 0) {
-    errno = -rc;
+  if (fputs("\n", stdout) == EOF) { // FIXME: use fputc() instead
     return EOF;
   }
 

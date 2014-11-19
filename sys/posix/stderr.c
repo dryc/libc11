@@ -5,15 +5,16 @@
 #endif
 
 #include <stdio.h> /* for stderr */
-#include "stdio_file.h"
+
+#include "sysio_file.h"
 
 /**
  * @date   2014-11-19
  * @author Arto Bendiken
  * @see    http://libc11.org/stdio/stderr.html
  */
-static FILE __sys_stderr = {
+static FILE __sysio_stderr = {
   .fd = 2,
 };
 
-FILE* const stderr = &__sys_stderr;
+FILE* const stderr = &__sysio_stderr;

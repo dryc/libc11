@@ -26,7 +26,7 @@ extern "C" {
 /**
  * C11 7.21.1.2
  */
-typedef struct __sys_FILE FILE;
+typedef struct __sysio_FILE FILE;
 
 /**
  * C11 7.21.1.3
@@ -45,6 +45,11 @@ extern FILE* const stdout;
  */
 #define stderr (stderr)
 extern FILE* const stderr;
+
+/**
+ * C11 7.21.7.4
+ */
+int fputs(const char* restrict str, FILE* restrict stream);
 
 /**
  * C11 7.21.7.9

@@ -9,7 +9,7 @@
  * System call interface for libc11.
  */
 
-#include <stdnoreturn.h>
+#include <stdnoreturn.h> /* for _Noreturn */
 
 #ifdef __cplusplus
 extern "C" {

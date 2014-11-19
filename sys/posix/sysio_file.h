@@ -1,7 +1,7 @@
 /* This is free and unencumbered software released into the public domain. */
 
-#ifndef _STDIO_FILE_H
-#define _STDIO_FILE_H
+#ifndef _SYSIO_FILE_H
+#define _SYSIO_FILE_H
 
 /**
  * @file
@@ -14,7 +14,7 @@ extern "C" {
 /*
  * The non-public internals of FILE objects.
  */
-struct __sys_FILE {
+struct __sysio_FILE {
   int fd;
 };
 
@@ -22,4 +22,4 @@ struct __sys_FILE {
 } /* extern "C" */
 #endif
 
-#endif /* _STDIO_FILE_H */
+#endif /* _SYSIO_FILE_H */
