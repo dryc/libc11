@@ -16,6 +16,12 @@ extern "C" {
 #endif
 
 /**
+ * @param stream the stream to check
+ * @return nonzero if the stream is in error state
+ */
+int __sysio_errno(FILE* stream);
+
+/**
  * @param stream the output stream
  * @param buffer the data buffer
  * @param count the byte count

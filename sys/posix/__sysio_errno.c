@@ -4,18 +4,17 @@
 #include <config.h>
 #endif
 
-#include <stdio.h> /* for stderr */
+#include <stdio.h> /* for FILE */
 
+#include "sysio.h"
 #include "sysio_file.h"
 
 /**
  * @date   2014-11-19
  * @author Arto Bendiken
- * @see    http://libc11.org/stdio/stderr.html
+ * @see    http://libc11.org/stdio.html
  */
-static FILE __sysio_stderr = {
-  .fd    = 2,
-  .error = 0,
-};
-
-FILE* const stderr = &__sysio_stderr;
+int
+__sysio_errno(FILE* const stream) {
+  return stream->error;
+}

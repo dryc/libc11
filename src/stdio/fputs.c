@@ -4,11 +4,11 @@
 #include <config.h>
 #endif
 
-#include <errno.h>   /* for errno */
-#include <stdio.h>   /* for fputs() */
-#include <string.h>  /* for strlen() */
+#include <errno.h>  /* for errno */
+#include <stdio.h>  /* for EOF, FILE, fputs() */
+#include <string.h> /* for strlen() */
 
-#include "sysio.h"   /* for __sysio_*() */
+#include "sysio.h"  /* for __sysio_*() */
 
 /**
  * @date   2014-11-19

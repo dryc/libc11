@@ -16,6 +16,7 @@ extern "C" {
  */
 struct __sysio_FILE {
   int fd;
+  int error;
 };
 
 #ifdef __cplusplus

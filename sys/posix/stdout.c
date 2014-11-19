@@ -14,7 +14,8 @@
  * @see    http://libc11.org/stdio/stdout.html
  */
 static FILE __sysio_stdout = {
-  .fd = 1,
+  .fd    = 1,
+  .error = 0,
 };
 
 FILE* const stdout = &__sysio_stdout;

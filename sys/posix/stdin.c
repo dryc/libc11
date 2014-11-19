@@ -14,7 +14,8 @@
  * @see    http://libc11.org/stdio/stdin.html
  */
 static FILE __sysio_stdin = {
-  .fd = 0,
+  .fd    = 0,
+  .error = 0,
 };
 
 FILE* const stdin = &__sysio_stdin;
