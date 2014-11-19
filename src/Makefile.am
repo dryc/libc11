@@ -2,6 +2,7 @@ lib_LTLIBRARIES = libc.la
 
 libc_la_SOURCES =
 libc_la_LIBADD  = \
+  $(top_srcdir)/sys/$(HOST_TYPE)/libcsysio.la \
   $(top_srcdir)/sys/$(HOST_TYPE)/$(HOST_OS)/$(HOST_CPU)/libcsys.la
 
 SUBDIRS = include
