@@ -1,6 +1,7 @@
 noinst_LTLIBRARIES = libcstdio.la
 
 libcstdio_la_SOURCES = \
+  clearerr.c           \
   ferror.c             \
   fputc.c              \
   fputs.c              \

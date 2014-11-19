@@ -47,6 +47,16 @@ extern FILE* const stdout;
 extern FILE* const stderr;
 
 /**
+ * C11 7.21.10.1
+ */
+void clearerr(FILE* stream);
+
+/**
+ * C11 7.21.10.2
+ */
+int feof(FILE* stream);
+
+/**
  * C11 7.21.10.3
  */
 int ferror(FILE* stream);
@@ -60,6 +70,11 @@ int fputc(int chr, FILE* stream);
  * C11 7.21.7.4
  */
 int fputs(const char* restrict str, FILE* restrict stream);
+
+/**
+ * C11 7.21.10.4
+ */
+void perror(const char* str);
 
 /**
  * C11 7.21.7.7

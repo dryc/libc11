@@ -14,7 +14,7 @@
  * @author Arto Bendiken
  * @see    http://libc11.org/stdio.html
  */
-int
+int*
 __sysio_errno(FILE* const stream) {
-  return stream->error;
+  return &(stream->error);
 }

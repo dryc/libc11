@@ -16,10 +16,10 @@ extern "C" {
 #endif
 
 /**
- * @param stream the stream to check
- * @return nonzero if the stream is in error state
+ * @param stream the stream to access
+ * @return a pointer to the stream's error number
  */
-int __sysio_errno(FILE* stream);
+int* __sysio_errno(FILE* stream);
 
 /**
  * @param stream the output stream
