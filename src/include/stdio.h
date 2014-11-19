@@ -62,6 +62,11 @@ int fputs(const char* restrict str, FILE* restrict stream);
 int putc(int chr, FILE* stream);
 
 /**
+ * C11 7.21.7.8
+ */
+int putchar(int chr);
+
+/**
  * C11 7.21.7.9
  */
 int puts(const char* str);
