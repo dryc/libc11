@@ -140,8 +140,8 @@ Configuring for Bare Metal
 
 The special *none* target operating system builds the library with a
 system-call interface where all system operations are simply no-op stubs.
-See the ``sys/syscall.h`` header file and the ``sys/none/`` directory for
-the syscall stubs that a bare-metal user of libc11 must implement.
+See the ``sys/syscall.h`` header file and the ``sys/posix/none/`` directory
+for the syscall stubs that a bare-metal user of libc11 must implement.
 
 The following example shows how one might configure a cross-compilation
 build on an x86-64 Linux system, targeting an x86-64 bare-metal system::
@@ -151,7 +151,7 @@ build on an x86-64 Linux system, targeting an x86-64 bare-metal system::
 Provided your linker supports `weak symbols`_, you can configure the libc11
 build as per the aforementioned example, and then when linking libc11 into
 your kernel provide your own syscall implementations as strong symbols that
-override the default no-op stubs from ``sys/none/``.
+override the default no-op stubs from ``sys/posix/none/``.
 
 .. _weak symbols: http://en.wikipedia.org/wiki/Weak_symbol
 

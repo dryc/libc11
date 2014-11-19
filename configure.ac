@@ -193,7 +193,7 @@ TEST_CFLAGS="$AM_CFLAGS"
 AM_LDFLAGS="$AM_LDFLAGS"
 TEST_LDFLAGS="$AM_LDFLAGS"
 TEST_LDFLAGS="$TEST_LDFLAGS -L\$(top_srcdir)/src -static"
-TEST_LDFLAGS="$TEST_LDFLAGS -XCClinker \$(top_srcdir)/sys/\$(HOST_OS)/\$(HOST_CPU)/crt0.o"
+TEST_LDFLAGS="$TEST_LDFLAGS -XCClinker \$(top_srcdir)/sys/\$(HOST_TYPE)/\$(HOST_OS)/\$(HOST_CPU)/crt0.o"
 
 dnl Check for library functions:
 AB_CHECK_BUILTIN([__builtin_memchr])
@@ -235,15 +235,17 @@ AC_CONFIG_FILES([
   src/uchar/Makefile
   src/unistd/Makefile
   sys/Makefile
-  sys/bsd/Makefile
-  sys/bsd/x86_64/Makefile
-  sys/darwin/Makefile
-  sys/darwin/x86_64/Makefile
-  sys/linux/Makefile
-  sys/linux/arm/Makefile
-  sys/linux/x86/Makefile
-  sys/linux/x86_64/Makefile
-  sys/none/Makefile
+  sys/posix/Makefile
+  sys/posix/bsd/Makefile
+  sys/posix/bsd/x86_64/Makefile
+  sys/posix/darwin/Makefile
+  sys/posix/darwin/x86_64/Makefile
+  sys/posix/linux/Makefile
+  sys/posix/linux/arm/Makefile
+  sys/posix/linux/x86/Makefile
+  sys/posix/linux/x86_64/Makefile
+  sys/posix/none/Makefile
+  sys/windows/Makefile
   test/Makefile
   test/include/Makefile
   test/assert/Makefile

@@ -1,2 +1,2 @@
-SUBDIRS = $(HOST_OS)
-DIST_SUBDIRS = bsd darwin linux none
+SUBDIRS = $(HOST_TYPE)
+DIST_SUBDIRS = posix windows
