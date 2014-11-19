@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <stdio.h> /* for stdout, fputc(), fputs(), puts() */
+#include <stdio.h> /* for EOF, stdout, fputc(), fputs(), puts() */
 
 /**
  * @date   2014-11-14
@@ -17,7 +17,7 @@ puts(const char* const str) {
     return EOF;
   }
 
-  if (fputs("\n", stdout) == EOF) { // FIXME: use fputc() instead
+  if (fputc('\n', stdout) == EOF) {
     return EOF;
   }
 

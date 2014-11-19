@@ -47,9 +47,19 @@ extern FILE* const stdout;
 extern FILE* const stderr;
 
 /**
+ * C11 7.21.7.3
+ */
+int fputc(int chr, FILE* stream);
+
+/**
  * C11 7.21.7.4
  */
 int fputs(const char* restrict str, FILE* restrict stream);
+
+/**
+ * C11 7.21.7.7
+ */
+int putc(int chr, FILE* stream);
 
 /**
  * C11 7.21.7.9
