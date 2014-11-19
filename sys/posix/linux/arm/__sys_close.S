@@ -1,18 +1,16 @@
 /* This is free and unencumbered software released into the public domain. */
 
-#define SYS_write 4
+#define SYS_close 6
 
 .syntax unified
 
 .section .text
 
-.global __sys_write
-__sys_write:
+.global __sys_close
+__sys_close:
     /* r0 = fd     */
-    /* r1 = buffer */
-    /* r2 = count  */
     stmfd sp!, {r7, lr}
-    mov r7, #SYS_write
+    mov r7, #SYS_close
     swi 0
     ldmfd sp!, {r7, lr}
     bx lr

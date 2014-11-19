@@ -1,12 +1,12 @@
 /* This is free and unencumbered software released into the public domain. */
 
-#define SYSCALL_EXIT 0x2000001
+#define SYS_exit 0x2000001
 
 .text
 
 .globl ___sys_exit
 ___sys_exit:
     /* %rdi = status */
-    movq $SYSCALL_EXIT, %rax
+    movq $SYS_exit, %rax
     syscall
     hlt

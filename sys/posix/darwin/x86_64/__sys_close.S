@@ -1,15 +1,13 @@
 /* This is free and unencumbered software released into the public domain. */
 
-#define SYS_write 0x2000004
+#define SYS_close 0x2000006
 
 .text
 
-.globl ___sys_write
-___sys_write:
+.globl ___sys_close
+___sys_close:
     /* %rdi = fd     */
-    /* %rsi = buffer */
-    /* %rdx = count  */
-    movq $SYS_write, %rax
+    movq $SYS_close, %rax
     syscall
     ret
     /* %rax = result */

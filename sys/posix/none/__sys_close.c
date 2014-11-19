@@ -6,9 +6,9 @@
 
 #include "syscall.h"
 
-void
-__sys_exit(const int status) {
-  (void)status; /* ignore exit code */
+int
+__sys_close(const int fd) {
+  (void)fd; /* ignore arguments */
 
-  for (;;) {}   /* loop infinitely */
+  return -1;
 }
