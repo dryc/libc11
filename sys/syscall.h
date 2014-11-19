@@ -16,6 +16,12 @@ extern "C" {
 #endif
 
 /**
+ * @param fd the file descriptor to close
+ * @return zero on success, or `-errno` on error
+ */
+int __sys_close(int fd);
+
+/**
  * @param status the exit code
  */
 _Noreturn void __sys_exit(int status);

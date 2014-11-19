@@ -52,6 +52,11 @@ extern FILE* const stderr;
 void clearerr(FILE* stream);
 
 /**
+ * C11 7.21.5.1
+ */
+int fclose(FILE* stream);
+
+/**
  * C11 7.21.10.2
  */
 int feof(FILE* stream);
@@ -60,6 +65,11 @@ int feof(FILE* stream);
  * C11 7.21.10.3
  */
 int ferror(FILE* stream);
+
+/**
+ * C11 7.21.5.2
+ */
+int fflush(FILE* stream);
 
 /**
  * C11 7.21.7.3

@@ -16,6 +16,12 @@ extern "C" {
 #endif
 
 /**
+ * @param stream the stream to close
+ * @return zero on success, or `-errno` on error
+ */
+int __sysio_close(FILE* stream);
+
+/**
  * @param stream the stream to access
  * @return a pointer to the stream's error number
  */
