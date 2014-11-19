@@ -165,13 +165,13 @@ AS_CASE([$host_cpu],
   [x86_64], [host_cpu="x86_64"],
   [AC_MSG_ERROR([unsupported CPU architecture: $host_cpu])])
 AS_CASE([$host_os],
-  [darwin*],  [host_os="darwin" AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_DARWIN"],
-  [freebsd*], [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_FREEBSD"],
-  [linux*],   [host_os="linux"  AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_LINUX"],
-  [netbsd*],  [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_NETBSD"],
-  [none],     [host_os="none"   AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_NONE"],
-  [openbsd*], [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_OPENBSD"],
-  [solaris*], [host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_SOLARIS"],
+  [darwin*],  [host_type="posix" host_os="darwin" AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_DARWIN"],
+  [freebsd*], [host_type="posix" host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_FREEBSD"],
+  [linux*],   [host_type="posix" host_os="linux"  AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_LINUX"],
+  [netbsd*],  [host_type="posix" host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_NETBSD"],
+  [none],     [host_type="posix" host_os="none"   AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_NONE"],
+  [openbsd*], [host_type="posix" host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_OPENBSD"],
+  [solaris*], [host_type="posix" host_os="bsd"    AM_CPPFLAGS="$AM_CPPFLAGS -DHOST_SOLARIS"],
   [AC_MSG_ERROR([unsupported OS platform: $host_os])])
 AX_COMPILER_VENDOR
 AS_CASE([$ax_cv_c_compiler_vendor],
@@ -274,6 +274,7 @@ AC_SUBST([TEST_LDFLAGS])
 AC_SUBST([HOST_CPU], [$host_cpu])
 AC_SUBST([HOST_VENDOR], [$host_vendor])
 AC_SUBST([HOST_OS], [$host_os])
+AC_SUBST([HOST_TYPE], [$host_type])
 AC_SUBST([PACKAGE_VERSION_MAJOR], ["VERSION_MAJOR"])
 AC_SUBST([PACKAGE_VERSION_MINOR], ["VERSION_MINOR"])
 AC_SUBST([PACKAGE_VERSION_PATCH], ["VERSION_PATCH"])
