@@ -1,0 +1,5 @@
+MASTER_HOST=192.168.1.100
+MASTER_PORT=9989
+SLAVE_NAME=solaris-11.2-x86_64
+SLAVE_PASSWORD=pass
+@reboot /usr/bin/buildslave restart /export/home/buildbot/libc11
