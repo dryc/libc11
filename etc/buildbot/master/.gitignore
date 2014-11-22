@@ -1,6 +1,15 @@
 .htpasswd
+gitpoller-work
 http.log
 state.sqlite
 twistd.hostname
 twistd.log
 twistd.pid
+
+# Buildmaster builder directories:
+freebsd-*
+netbsd-*
+openbsd-*
+osx-*
+solaris-*
+ubuntu-*
