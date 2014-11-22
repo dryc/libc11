@@ -1,0 +1,2 @@
+SLAVE_PASSWORD=pass
+@reboot /usr/local/bin/buildbot restart /home/buildmaster/libc11
