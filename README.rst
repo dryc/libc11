@@ -70,7 +70,7 @@ Header          Spec     Description                         Status
 
 .. [2] Currently implemented only for the Clang and GCC compilers.
 
-.. [3] Purposely omitted from the library.
+.. [3] Legacy wide-character support purposely omitted from the library.
 
 Platform Support
 ----------------
@@ -92,6 +92,9 @@ Mac OS X        x86-64          AMD64 SysV ABI          Clang, GCC
 .. rubric:: Footnotes
 
 .. [4] The ``armhf`` architecture providing a hardware floating-point unit (FPU).
+
+See `http://build.libc11.org <http://build.libc11.org/grid>`__ for the
+current build status on all supported platforms.
 
 Installation
 ============
@@ -160,6 +163,7 @@ Elsewhere
 
 Find this project at: GitHub_, Bitbucket_, `Open Hub`_, SourceForge_,
 `Travis CI`_, `Coverity Scan`_, Twitter_, Tumblr_, and COD5_.
+See also the project's `Buildbot <http://build.libc11.org/waterfall>`__.
 
 .. _GitHub:        http://github.com/dryproject/libc11
 .. _Bitbucket:     http://bitbucket.org/dryproject/libc11

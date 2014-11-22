@@ -1,19 +1,28 @@
-Near-Term Priorities
---------------------
+Release 0.1.0 ("Hello, world!")
+-------------------------------
 
-- Make the classic "Hello, world!" example run on all supported platforms.
-  + sys/**/crt0.S
-  + sys/**/__sys_exit.S
-  ~ sys/**/__sys_write.S
-  + <stdlib.h>: EXIT_SUCCESS
-  ~ <stdio.h>: puts()
-- Implement assert() so that the test harness can be made useful.
-  - <assert.h>: assert()
-- Detect support for __attribute__((weak)) and use it in sys/none/.
++ Make the classic "Hello, world!" example run on all supported platforms.
+- Implement <assert.h> so that the test harness can be made useful:
+  - <signal.h>: raise().
+  ~ <stdlib.h>: abort().
+  - <assert.h>: assert().
+- Implement more of <stdio.h>:
+  - <stdio.h>: feof(), fgetc(), getc(), getchar().
+- Implement more of <stdlib.h>:
+  ~ <stdlib.h>: _Exit(), exit(), atexit().
+  ~ <stdlib.h>: quick_exit(), at_quick_exit().
+  - <stdlib.h>: char* getenv(const char* name), environ.
+  + <stdlib.h>: abs(), labs(), llabs().
+  - <stdlib.h>: div(), ldiv(), lldiv().
+- Implement all of <string.h>.
+- Publish the manual on the website.
+- Add more compilers to the Travis CI build matrix.
 
 Other Priorities
 ----------------
 
+- <errno.h> macros should correspond to the platform's numeric values.
+- Detect support for __attribute__((weak)) and use it in sys/none/.
 - malloc(), calloc(), realloc(), free() for all supported platforms.
 
 Platform Support
@@ -65,4 +74,6 @@ BSD Extensions
   http://www.courtesan.com/todd/papers/strlcpy.html
 - reallocarray()
   http://lteo.net/blog/2014/10/28/reallocarray-in-openbsd-integer-overflow-detection-for-free/
+- arc4random(), arc4random_buf(), arc4random_uniform(), using ChaCha20
+  http://www.openbsd.org/papers/hackfest2014-arc4random/
 - http://en.wikipedia.org/wiki/C_standard_library#BSD_libc
