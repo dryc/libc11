@@ -2,4 +2,5 @@ MASTER_HOST=192.168.1.100
 MASTER_PORT=9989
 SLAVE_NAME=freebsd-10.1-x86_64
 SLAVE_PASSWORD=pass
+PATH=/bin:/usr/bin:/usr/local/bin
 @reboot /usr/local/bin/buildslave restart /home/buildbot/libc11
