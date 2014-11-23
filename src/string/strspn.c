@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h> /* for size_t, strspn() */
+#include <string.h> /* for size_t, strchr(), strspn() */
 
 /**
  * @date   2014-11-23
@@ -15,5 +15,11 @@ size_t
 strspn(const char* s1,
        const char* s2) {
 
-  return (void)s1, (void)s2, 0; // TODO
+  size_t result = 0;
+
+  while (*s1 && strchr(s2, *s1)) {
+    s1++, result++;
+  }
+
+  return result;
 }
