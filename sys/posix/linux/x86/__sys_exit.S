@@ -1,6 +1,6 @@
 /* This is free and unencumbered software released into the public domain. */
 
-#define SYS_exit 1
+#define SYS_exit_group 252
 
 .section .text
 
@@ -8,6 +8,6 @@
 __sys_exit:
     /* 4(%esp) = status */
     movl 4(%esp), %ebx
-    movl $SYS_exit, %eax
+    movl $SYS_exit_group, %eax
     int $0x80
     hlt
