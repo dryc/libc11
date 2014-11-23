@@ -4,16 +4,16 @@
 #include <config.h>
 #endif
 
-#include <string.h> /* for NULL, size_t, memmove() */
+#include <string.h> /* for NULL, size_t, strncat() */
 
 /**
- * @date   2013-05-24
+ * @date   2014-11-23
  * @author Arto Bendiken
- * @see    http://libc11.org/string/memmove.html
+ * @see    http://libc11.org/string/strncat.html
  */
-void*
-memmove(void* s1,
-        const void* s2,
+char*
+strncat(char* restrict s1,
+        const char* restrict s2,
         size_t n) {
 
   return (void)s1, (void)s2, (void)n, NULL; // TODO

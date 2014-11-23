@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h>
+#include <string.h> /* for size_t, memset() */
 
 /**
  * @date   2013-05-24
@@ -15,6 +15,7 @@ void*
 memset(void* const s,
        const int c,
        size_t n) {
+
   const unsigned char b = (unsigned char)c;
 
   unsigned char* p = (unsigned char*)s;

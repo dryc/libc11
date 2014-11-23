@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h>
+#include <string.h> /* for size_t, strnlen() */
 
 /**
  * @date   2013-05-26
@@ -14,5 +14,6 @@
 size_t
 strnlen(const char* const s,
         const size_t maxlen) {
+
   return (void)s, (void)maxlen, 0; // TODO
 }

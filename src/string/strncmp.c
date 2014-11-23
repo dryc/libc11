@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h>
+#include <string.h> /* for size_t, strncmp() */
 
 /**
  * @date   2013-05-24
@@ -15,5 +15,6 @@ int
 strncmp(const char* const s1,
         const char* const s2,
         const size_t n) {
+
   return (void)s1, (void)s2, (void)n, -1; // TODO
 }

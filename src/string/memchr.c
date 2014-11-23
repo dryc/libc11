@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h>
+#include <string.h> /* for NULL, size_t, memchr() */
 
 /**
  * @date   2013-05-24
@@ -15,5 +15,6 @@ void*
 memchr(const void* s,
        int c,
        size_t n) {
+
   return (void)s, (void)c, (void)n, NULL; // TODO
 }

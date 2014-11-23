@@ -6,7 +6,21 @@ libcstring_la_SOURCES = \
   memcpy.c              \
   memmove.c             \
   memset.c              \
+  strcat.c              \
+  strchr.c              \
   strcmp.c              \
+  strcoll.c             \
+  strcpy.c              \
+  strcspn.c             \
+  strerror.c            \
   strlen.c              \
+  strncat.c             \
   strncmp.c             \
-  strnlen.c
+  strncpy.c             \
+  strnlen.c             \
+  strpbrk.c             \
+  strrchr.c             \
+  strspn.c              \
+  strstr.c              \
+  strtok.c              \
+  strxfrm.c

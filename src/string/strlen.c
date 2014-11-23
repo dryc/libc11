@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h>
+#include <string.h> /* for size_t, strlen() */
 
 /**
  * @date   2013-06-11
@@ -13,6 +13,7 @@
  */
 size_t
 strlen(const char* const s) {
+
   const char* p = s;
   while (*p++ != '\0') {
     /* no-op */

@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h>
+#include <string.h> /* for strcmp() */
 
 /**
  * @date   2013-05-24
@@ -14,6 +14,7 @@
 int
 strcmp(const char* const s1,
        const char* const s2) {
+
   const unsigned char* p1 = (unsigned char*)s1;
   const unsigned char* p2 = (unsigned char*)s2;
 
