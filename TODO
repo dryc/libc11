@@ -6,8 +6,8 @@ Release 0.1.0 ("Hello, world!")
   - <signal.h>: raise().
   ~ <stdlib.h>: abort().
   - <assert.h>: assert().
-- Implement more of <stdio.h>:
-  - <stdio.h>: feof(), fgetc(), getc(), getchar().
+~ Implement more of <stdio.h>:
+  ~ <stdio.h>: feof(), fgetc(), getc(), getchar().
 - Implement more of <stdlib.h>:
   ~ <stdlib.h>: _Exit(), exit(), atexit().
   ~ <stdlib.h>: quick_exit(), at_quick_exit().

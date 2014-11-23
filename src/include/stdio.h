@@ -72,6 +72,11 @@ int ferror(FILE* stream);
 int fflush(FILE* stream);
 
 /**
+ * C11 7.21.7.1
+ */
+int fgetc(FILE* stream);
+
+/**
  * C11 7.21.7.3
  */
 int fputc(int chr, FILE* stream);
@@ -80,6 +85,16 @@ int fputc(int chr, FILE* stream);
  * C11 7.21.7.4
  */
 int fputs(const char* restrict str, FILE* restrict stream);
+
+/**
+ * C11 7.21.7.5
+ */
+int getc(FILE* stream);
+
+/**
+ * C11 7.21.7.6
+ */
+int getchar(void);
 
 /**
  * C11 7.21.10.4
