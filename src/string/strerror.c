@@ -4,6 +4,7 @@
 #include <config.h>
 #endif
 
+#include <errno.h>  /* for E* */
 #include <string.h> /* for NULL, strerror() */
 
 /**
@@ -13,6 +14,10 @@
  */
 char*
 strerror(int errnum) {
-
-  return (void)errnum, NULL; // TODO
+  switch (errnum) {
+    case EDOM:   return "Numerical argument out of domain";
+    case EILSEQ: return "Illegal byte sequence";
+    case ERANGE: return "Result too large";
+    default:     return "Unknown error";
+  }
 }
