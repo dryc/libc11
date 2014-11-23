@@ -8,13 +8,22 @@
 
 /**
  * @date   2014-11-23
- * @author Arto Bendiken
+ * @author Vlad Gluhovsky
  * @see    http://libc11.org/string/strncat.html
  */
 char*
 strncat(char* restrict s1,
         const char* restrict s2,
         size_t n) {
+		
+	size_t i = 0, j = 0;
+	while (s1[i++])
+		;
+			
+	while (j < n && s2[j])
+		s1[i++] = s2[j++];
+			
+	s1[i] = 0;
 
-  return (void)s1, (void)s2, (void)n, NULL; // TODO
+  return s1;
 }
