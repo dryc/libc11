@@ -13,7 +13,14 @@
  */
 char*
 strrchr(const char* s,
-        int c) {
+        const int c) {
 
-  return (void)s, (void)c, NULL; // TODO
+  const char* p = NULL;
+  while (*s != '\0') {
+    if (*s == (char)c) {
+      p = s;
+    }
+    s++;
+  }
+  return (char*)p;
 }
