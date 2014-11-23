@@ -4,7 +4,7 @@
 #include <config.h>
 #endif
 
-#include <string.h> /* for size_t, strchr(), strspn() */
+#include <string.h> /* for NULL, size_t, strchr(), strspn() */
 
 /**
  * @date   2014-11-23
