@@ -13,11 +13,11 @@
  */
 size_t
 strspn(const char* s1,
-       const char* s2) {
+       const char* const s2) {
 
   size_t result = 0;
 
-  while (*s1 && strchr(s2, *s1)) {
+  while (*s1 != '\0' && strchr(s2, *s1) != NULL) {
     s1++, result++;
   }
 
