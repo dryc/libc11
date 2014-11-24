@@ -215,6 +215,11 @@ This project is part of the `DRY <http://dryproject.org/>`_ initiative.
 
 * `Arto Bendiken <https://github.com/bendiken>`_ - http://ar.to/
 
+Contributors
+============
+
+* `Vlad Gluhovsky <https://github.com/gluckq>`_
+
 Donations
 =========
 
