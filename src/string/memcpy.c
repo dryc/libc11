@@ -9,6 +9,7 @@
 /**
  * @date   2013-05-24
  * @author Arto Bendiken
+ * @auther Syed Nasim
  * @see    http://libc11.org/string/memcpy.html
  */
 void*
@@ -16,5 +17,11 @@ memcpy(void* restrict s1,
        const void* restrict s2,
        size_t n) {
 
-  return (void)s1, (void)s2, (void)n, NULL; // TODO
+  char * dest = (char *) s1;
+  const char * src = (const char *) s2;
+    while ( n-- )
+    {
+        *dest++ = *src++;
+    }
+  return s1;
 }

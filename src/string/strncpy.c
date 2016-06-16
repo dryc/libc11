@@ -9,6 +9,7 @@
 /**
  * @date   2014-11-23
  * @author Arto Bendiken
+ * @auther Syed Nasim
  * @see    http://libc11.org/string/strncpy.html
  */
 char*
@@ -16,5 +17,14 @@ strncpy(char* restrict s1,
         const char* restrict s2,
         size_t n) {
 
-  return (void)s1, (void)s2, (void)n, NULL; // TODO
+  char * rc = s1;
+  while ( ( n > 0 ) && ( *s1++ = *s2++ ) )
+  {
+     --n;
+  }
+  while ( n-- > 1 )
+  {
+     *s1++ = '\0';
+  }
+  return rc;
 }
