@@ -220,6 +220,8 @@ Contributors
 
 * `Vlad Gluhovsky <https://github.com/gluckq>`_
 
+* `Syed Nasim <https://github.com/warmachine2002>`_
+
 Donations
 =========
 
