@@ -9,6 +9,7 @@
 /**
  * @date   2013-05-24
  * @author Arto Bendiken
+ * @auther Syed Nasim
  * @see    http://libc11.org/string/memmove.html
  */
 void*
@@ -16,5 +17,23 @@ memmove(void* s1,
         const void* s2,
         size_t n) {
 
-  return (void)s1, (void)s2, (void)n, NULL; // TODO
+  char * dest = (char *) s1;
+  const char * src = (const char *) s2;
+  if ( dest <= src )
+  {
+      while ( n-- )
+      {
+          *dest++ = *src++;
+      }
+  }
+  else
+  {
+      src += n;
+      dest += n;
+      while ( n-- )
+      {
+          *--dest = *--src;
+      }
+  }
+  return s1;
 }
