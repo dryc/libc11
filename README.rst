@@ -43,7 +43,7 @@ Header          Spec     Description                         Status
 <iso646.h>      C11 7.9  Alternative spellings.              Implemented.
 <limits.h>      C11 7.10 Sizes of integer types.             Implemented.
 <locale.h>      C11 7.11 Localization.                       Stubbed.
-<math.h>        C11 7.12 Mathematics.                        
+<math.h>        C11 7.12 Mathematics.                        WIP
 <setjmp.h>      C11 7.13 Nonlocal jumps.                     
 <signal.h>      C11 7.14 Signal handling.                    WIP
 <stdalign.h>    C11 7.15 Alignment.                          Implemented.
@@ -221,6 +221,8 @@ Contributors
 * `Vlad Gluhovsky <https://github.com/gluckq>`_
 
 * `Syed Nasim <https://github.com/warmachine2002>`_
+
+* `Samuel Sarle <https://github.com/SamuelSarle>`_
 
 Donations
 =========
