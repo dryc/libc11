@@ -9,26 +9,24 @@
 /**
  * @date   2013-05-24
  * @author Arto Bendiken
- * @auther Syed Nasim
+ * @author Syed Nasim
  * @see    http://libc11.org/string/strncmp.html
  */
 int
-strncmp(const char* const s1,
-        const char* const s2,
-        const size_t n) {
+strncmp(const char* s1,
+        const char* s2,
+        size_t n) {
 
-  while ( *s1 && n && ( *s1 == *s2 ) )
-  {
-      ++s1;
-      ++s2;
-      --n;
+  while (*s1 && n && (*s1 == *s2)) {
+    ++s1;
+    ++s2;
+    --n;
   }
-  if ( ( n == 0 ) )
-  {
-      return 0;
+
+  if (n == 0) {
+    return 0;
   }
-  else
-  {
-      return ( *(uint8_t *)s1 - *(uint8_t *)s2 );
+  else {
+    return (*(unsigned char*)s1 - *(unsigned char*)s2);
   }
 }
