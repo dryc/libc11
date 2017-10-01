@@ -18,15 +18,3 @@ pow(double x, double y) {
     return z;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
