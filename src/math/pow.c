@@ -10,7 +10,7 @@
  */
 
 double
-pow(double x, double y) {
+pow(double x, double y){
     double z = 1;
     int i;
     for (i=0;i<y;i++)
