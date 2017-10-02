@@ -3,6 +3,7 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+
 /**
  * @date   2017-10-01
  * @author Samuel Sarle
@@ -10,10 +11,9 @@
  */
 
 double
-pow(double x, double y){
+pow(const double x, const double y) {
     double z = 1;
-    int i;
-    for (i=0;i<y;i++)
+    for (int i=0; i<y; i++)
         z *= x;
     return z;
 }
