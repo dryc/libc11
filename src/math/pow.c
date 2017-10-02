@@ -12,9 +12,10 @@
 
 double
 pow(const double x, const double y) {
-    double z = 1;
-    for (int i=0; i<y; i++)
-        z *= x;
-    return z;
+  double z = 1;
+  for (unsigned long long i = 0; i < y; i++) {
+    z *= x;
+  }
+  return z;
 }
 
