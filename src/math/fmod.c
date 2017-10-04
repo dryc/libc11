@@ -12,7 +12,7 @@
 
 double
 fmod(double x, const double y) {
-  if (x < y || x < 0 || y < 0) {
+  if (x <= y || x <= 0 || y <= 0) {
     return 0;
   }
   while (x >= y) {
