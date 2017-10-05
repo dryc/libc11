@@ -4,13 +4,14 @@
 #include <config.h>
 #endif
 
+#include <math.h>     //For pow()
+
 /**
  * @date   2017-10-04
  * @author Samuel Sarle
  * @see    http://libc11.org/math/ldexp.html
  */
 
-#include <math.h>     //For pow()
 
 double
 ldexp(const double x, const long long y) {
