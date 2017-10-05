@@ -26,15 +26,3 @@ sqrt(const double x) {
   double w = i + y; 
   return w - (y * y) / (2 * w);
 }
-
-#include <stdio.h>
-
-int
-main() {
-  printf("%.10f\n",sqrt(5));
-  printf("%.10f\n",sqrt(10));
-  printf("%.10f\n",sqrt(2));
-  printf("%.10f\n",sqrt(4));
-  printf("%.10f\n",sqrt(-16));
-  printf("%.10f\n",sqrt(1000000));
-}
