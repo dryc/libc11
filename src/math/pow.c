@@ -13,9 +13,16 @@
 double
 pow(const double x, const double y) {
   double z = 1;
-  for (unsigned long long i = 0; i < y; i++) {
-    z *= x;
+  if (y > 0) {
+    for (unsigned long long i = 0; i < y; i++) {
+      z *= x;
+    }
+  }
+  if (y < 0 && x != 0) {
+    for (long long i = 0; i > y; i--) {
+      z /= x;
+    }
   }
   return z;
-}
 
+}
