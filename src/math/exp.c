@@ -4,16 +4,16 @@
 #include <config.h>
 #endif
 
-#include <math.h>     //For pow()
-
 /**
- * @date   2017-10-04
+ * @date   2017-10-09
  * @author Samuel Sarle
- * @see    http://libc11.org/math/ldexp.html
+ * @see    http://libc11.org/math/exp.html
  */
 
-
 double
-ldexp(const double x, const long long y) {
-  return x * pow(2, y);
+exp(double x) {
+  x =  1 + (x / 1048576);
+  for (int i = 0; i < 20; i++) {
+    x *= x;
+  }
 }
