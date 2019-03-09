@@ -13,9 +13,11 @@ main(void) {
     return EXIT_FAILURE; \
 }
 
+  TEST(strnlen(NULL, 0), 0)
   TEST(strnlen("", 10), 0)
   TEST(strnlen("HELLO", 7), 5)
   TEST(strnlen("HELLO", 2), 2)
+  TEST(strnlen("HELLO", 0), 0)
   TEST(strnlen("HE\0LLO", 5), 2)
   TEST(strnlen("HELLOHELLO#@#$tE9c=\001", 19), 19)
   TEST(strnlen("\x80\x80\x80\x80\x80\x80\x80\x80\x80\x80", 11), 10)
