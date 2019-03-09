@@ -49,10 +49,11 @@ strnlen(const char* const s, size_t size) {
    * boundary before finding the null byte.
    * When we are aligned, this is completely safe and has been trusted since
    * the early 90s. */
-  while ((uintptr_t)p & (sizeof(void*) - 1) && p <= end) {
-    if (*p++ == '\0') {
-      return (p > end ? size : (p - s - 1));
+  while ((uintptr_t)p & (sizeof(void*) - 1)) {
+    if (p == end || *p == '\0') {
+      return (p >= end ? size : (p - s));
     }
+    p++;
   }
   const size_t* longptr = (const size_t*)p;
 
@@ -64,9 +65,10 @@ strnlen(const char* const s, size_t size) {
       for (size_t i = 0; i < sizeof(size_t); i++) {
         /* Check the individual bits. There is a chance that haszero may
          * misfire. */
-        if (p == end || *p++ == '\0') {
-          return (p > end ? size : (p - s - 1));
+        if (p == end || *p == '\0') {
+          return (p > end ? size : (p - s));
         }
+        p++;
       }
     }
     p = (const char *)longptr;
